@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Main {
 	
-	public static ArrayList <Owner> ownerList = new ArrayList<Owner>();
 	public static ArrayList <Residence> residenceList = new ArrayList<Residence>();
 	public static ArrayList <tenant> tenantLinst = new ArrayList<tenant>();
 	public static ArrayList <houseAndTennant> houseAndTennantlist = new ArrayList<houseAndTennant>();
@@ -394,99 +393,105 @@ return h;	}
 		
 	}
 
+ 
  public static boolean editHousing1(int number,int id,String newValue ) {
-      	 for(int i=0; i<housingList.size();i++) {
+     boolean flag=false; 
+	 for(int i=0; i<housingList.size();i++) {
    		 if(id == housingList.get(i).getHousingId()) {
 if(number==2) {
        	housingList.get(i).setResidenceName(newValue);
    	 System.out.println("Done this update on ResidenceName");
-   	 return true;}
+   	flag = true ;}
 if(number==3) { 
 housingList.get(i).setLocation(newValue);
  System.out.println("Done this update on location");
- return true;
+	flag = true ;
 }
  if(number==6) {
  housingList.get(i).setPhoto(newValue);
  System.out.println("Done this update on Photo");
  
- return true;
+	flag = true ;
 
 }
  if(number==8) {
  housingList.get(i).setServices(newValue);
  System.out.println("Done this update on Services");
- return true; }
+	flag = true ; }
 
 
  if(number==13) {
  housingList.get(i).setOwnerName(newValue);
  System.out.println("Done this update on OwnerName");
- return true;
+	flag = true ;
 
 }
  if(number==14) {
  housingList.get(i).setOwnerPhone(newValue);
  System.out.println("Done this update on OwnerPhone");
- return true;
+	flag = true ;
 
 }
  if(number==15) {
  housingList.get(i).setOwnerEmail(newValue);
  System.out.println("Done this update on OwnerEmail");
- return true;
+	flag = true ;
 
 }
    		 
    		 }}
-      	return true;}
-    public static boolean editHousing2(int number,int id,int newValue ) {
-   	 for(int i=0; i<housingList.size();i++) {
+      	return flag;}
+
+ 
+ public static boolean editHousing2(int number,int id,int newValue ) {
+     boolean flag=false; 
+
+	 for(int i=0; i<housingList.size();i++) {
 		 if(id == housingList.get(i).getHousingId()) {
 			 if(number==1) {
 			     housingList.get(i).setResidenceId(newValue);
 			     System.out.println("Done this update ResidenceId");
-			     return true;
+			     flag= true;
 	    	 
 	    	 }
 			  if(number==4) {
 			     housingList.get(i).setFloorNum(newValue);
 			     System.out.println("Done this update FloorNum");
-			     return true;
+			     flag= true;
 				}
 				 if(number==5) {
 				 housingList.get(i).setApartmentNum(newValue);
 				 System.out.println("Done this update ApartmentNum");
-				 return true;
+				 flag= true;
 				}
 				 if(number==7) {
 				 housingList.get(i).setRent(newValue);
 				 System.out.println("Done this update Rent");
-				 return true;
+				 flag= true;
 }
 				 if(number==9) {
 				 housingList.get(i).setMaxNumOfTenant(newValue);
 				 System.out.println("Done this update MaxNumOfTenant");
-				 return true;
+				 flag= true;
 }
 				 if(number==10) {
 				 housingList.get(i).setNumOfBedrooms(newValue);
 				 System.out.println("Done this update NumOfBedrooms");
-				 return true;
+				 flag= true;
 }
 				 if(number==11) {
 				 housingList.get(i).setNumOfBathrooms(newValue);
 				 System.out.println("Done this update NumOfBathrooms");
-				 return true;
+				 flag= true;
 }
 				 if(number==12) {
 				 housingList.get(i).setBalcony(newValue);
 				 System.out.println("Done this update Balcony");
-				 return true;
+				 flag= true;
 
 }		 
 			 }}
-   	return true;}
+   	return flag;}
     
  
     public static boolean editHousing(int number,int id,String usernamee) {
