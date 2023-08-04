@@ -14,9 +14,6 @@ public class Apartment {
 	private Integer bathrooms;
 	private Integer balcony;
 	private Boolean available;
-//	2222,1111,1,2,111,222,11,22
-	//r 1 --> (2 F)    f1->3A(1,111,1111)      f2->1A(11)    f3->1A(2222) 
-   // r 5 --> (3 F)    f1->1A(2)               f2->1A(22)    f3->1A(222)     
 	
 	public Apartment() {}
 	

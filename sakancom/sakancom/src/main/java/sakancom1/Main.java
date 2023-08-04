@@ -68,7 +68,6 @@ public static  Boolean isUserFound (String userName , String passWord) {
 		
 		return returnn;}
 	
-//	
 public static boolean addUsedFurniture(String Furniture,String user) {
 	boolean flag=false;
 		for (int i=0 ; i<tenantLinst.size() ; i++) {
@@ -113,7 +112,6 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 
 						}
 							
-//							System.out.println("The apartment number booked in your name is  : "+houseAndTennantlist.get(j).gethousingId());
 
 				}
 					}
@@ -183,7 +181,6 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		System.out.println("Enter your password please");
 		String pass = input2.next();
 		login(username , pass);
-		//System.out.println(username);
 		showMenu();
 				  break;
 		
@@ -196,10 +193,10 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		   break;
 		}
 		}	
-//			
+			
 	public static boolean ShowStatusOfHousing() { 
-		//      house id : 556 ||||| Available 
-		//		house id : 557 ||||| Un_Available 
+		/**     house id : 556 ||||| Available 
+		   		house id : 557 ||||| Un_Available */
 		boolean flag=false;
 		for(int j=0; j<housingListAccepted.size();j++) {
 
@@ -209,9 +206,14 @@ flag=true;
 		return flag;
 	}
 	static int c=0;
+	private static Scanner input2;
+	private static Scanner input3;
+	private static Scanner scanner;
+	private static Scanner input4;
+	private static Scanner scanner2;
+	private static Scanner input22;
 	public static boolean bookAccommodation(int housingId) {
 		 boolean h=false;
-//		 int c=0;
 		 for(int i=0; i<housingListAccepted.size();i++) {
 			
 			  if(housingListAccepted.get(i).getHousingId() == housingId ) {
@@ -219,12 +221,10 @@ flag=true;
 				  if(housingListAccepted.get(i).getStatus().equals("Available") ) {
 					  c=c+1;
 					  h=true;
-//					  houseAndTennant.tenants[0]= "Ani";  
 					  houseAndTennant t1 = new houseAndTennant(housingId,username);
 					  houseAndTennantlist.add(t1);
 						
 						System.out.println("The apartment has been booked");
-//						System.out.println("/**/**/***/****///c = "+c);
 
 					  if(housingListAccepted.get(i).getMaxNumOfTenant()==c) {
 						  housingListAccepted.get(i).setStatusUnavailable();
@@ -280,17 +280,12 @@ return h;	}
 		
 			
 	case 4 :		System.out.println("this all housing for acepted ot reject  from admin");
-//			for(int i=0; i<housingList.size();i++) {
 					ShowHousingj(username);
-//					}
 			showMenu();
 			break;
 			
-	case 5 : 		//dss
-//		 for(int i=0; i<housingListAccepted.size();i++) {			
+	case 5 : 		
 		WatchingReservationstoOwner();
-		//}
-//}
 		showMenu();
 	break;	
 	case 6 : System.out.println("See you soon!");
@@ -300,7 +295,6 @@ return h;	}
 	System.out.println("Enter your password please");
 	String pass = input2.next();
 	login(username , pass);
-	//System.out.println(username);
 	showMenu();
 			  break;
 	default:showMenu();
@@ -313,7 +307,7 @@ return h;	}
 		
 	}
     public static Housing addHousingInfo() {
-	Scanner input4 = new Scanner(System.in);
+	input4 = new Scanner(System.in);
 	System.out.println("Enter the residence ID :");
 	int residenceId = input4.nextInt();
 	System.out.println("Enter the residence name :");
@@ -397,7 +391,6 @@ return h;	}
 			
 			
 	
-//		return housing_not_found;
 		
 	}
 
@@ -497,89 +490,86 @@ housingList.get(i).setLocation(newValue);
     
  
     public static boolean editHousing(int number,int id,String usernamee) {
-		///fun. Show all hausing for this owner
 
-    	Scanner scanner = new Scanner(System.in);
+    	scanner2 = new Scanner(System.in);
     	 for(int i=0; i<housingList.size();i++) {
-//    		 System.out.println("usernamee "+usernamee);
-//    		 System.out.println("housingList.get(i).getOwnerName "+housingList.get(i).getOwnerName());
 
     		 if(usernamee.equals(housingList.get(i).getOwnerName())) {
     		 
 			 if(id == housingList.get(i).getHousingId()) {
 			    	 if(number==1) {
 			    		 System.out.println("Enter new value to edit .. ");
-					     int resId = scanner.nextInt(); 
+					     int resId = scanner2.nextInt(); 
 					     editHousing2( number, id, resId );
 			    	 
 			    	 }
 				 if(number==2) {
 					System.out.println("Enter new value to edit .. ");
-					String resNmae = scanner.next();
+					String resNmae = scanner2.next();
 					editHousing1( number, id, resNmae );
 				
 				}
 				 if(number==3) {System.out.println("Enter new value to edit .. ");
-				String location = scanner.next(); 
+				String location = scanner2.next(); 
 				editHousing1( number, id, location );
 				}
 				 if(number==4) {System.out.println("Enter new value to edit .. ");
-			    int floorNum = scanner.nextInt();
+			    int floorNum = scanner2.nextInt();
 			     editHousing2( number, id, floorNum );
 
 				}
 				 if(number==5) {System.out.println("Enter new value to edit .. ");
-				int apartmentNum = scanner.nextInt();
+				int apartmentNum = scanner2.nextInt();
 			     editHousing2( number, id, apartmentNum );
 
 				}
 				 if(number==6) {System.out.println("Enter new value to edit .. ");
-				String photo = scanner.next();
+				String photo = scanner2.next();
 				editHousing1( number, id, photo );
 				}
 				 if(number==7) {System.out.println("Enter new value to edit .. ");
-				int rent = scanner.nextInt();
+				int rent = scanner2.nextInt();
 			     editHousing2( number, id, rent );
 
 }
 				 if(number==8) {System.out.println("Enter new value to edit .. ");
-				String services = scanner.next();
+				String services = scanner2.next();
 				editHousing1( number, id, services );
 
 
 				}
 				 if(number==9) {System.out.println("Enter new value to edit .. ");
-				int max = scanner.nextInt();
+				int max = scanner2.nextInt();
 			     editHousing2( number, id, max );
 
 }
 				 if(number==10) {System.out.println("Enter new value to edit .. ");
-				int bed = scanner.nextInt();
+				int bed = scanner2.nextInt();
 			     editHousing2( number, id, bed );
 
 }
 				 if(number==11) {System.out.println("Enter new value to edit .. ");
-				int bath = scanner.nextInt();
+				int bath = scanner2.nextInt();
 			     editHousing2( number, id, bath );
 
 }
 				 if(number==12) {System.out.println("Enter new value to edit .. ");
-				 int balcony = scanner.nextInt();
+				 int balcony = scanner2.nextInt();
 			     editHousing2( number, id, balcony );
 
 }
 				 if(number==13) {System.out.println("Enter new value to edit .. ");
-			String	name = scanner.next();
+			String	name = scanner2.next();
 			editHousing1( number, id, name );
 
 }
 				 if(number==14) {System.out.println("Enter new value to edit .. ");
-				String phone = scanner.next();
+				String phone = scanner2.next();
 				editHousing1( number, id, phone );
 
 }
 				 if(number==15) {System.out.println("Enter new value to edit .. ");
-				String email = scanner.next();
+				String email = scanner2.next();
 				editHousing1( number, id, email );
 
 }
@@ -596,8 +586,7 @@ housingList.get(i).setLocation(newValue);
 			     	   }
 
 }
-    	 }//*******************************
-				
+    	 }	
 				 
 				 
 			 }
@@ -610,9 +599,8 @@ housingList.get(i).setLocation(newValue);
 		
 		case 1 :System.out.println("accept And Reject!");
 		  for(int i=0; i<housingList.size();i++) {
-//			  if(housingList.get(i).getOwnerName().equals(username)) {
 			  ShowHousingWithId(housingList.get(i).getHousingId());		
-			Scanner scanner = new Scanner(System.in);
+			scanner = new Scanner(System.in);
 			System.out.println("Enter 1 to accept this House and Enter 2 to Reject this House... ");
 			int n = scanner.nextInt();
 			acceptAndReject(n,housingList.get(i));}
@@ -645,7 +633,6 @@ housingList.get(i).setLocation(newValue);
 		System.out.println("Enter your password please");
 		String pass = input2.next();
 		login(username , pass);
-		//System.out.println(username);
 		showMenu();
 		  break;
 		default:showMenu();
@@ -656,8 +643,7 @@ housingList.get(i).setLocation(newValue);
 			
 			
 		}
-   
-//	
+	
 	public static Boolean showTenantToAdmin() {
 		boolean flag=false;
 		for(int i=0 ; i<houseAndTennantlist.size();i++) {
@@ -671,7 +657,7 @@ housingList.get(i).setLocation(newValue);
 	
 	
 	
-	//
+
 	public static Boolean WatchingReservationstoOwner() {
 		boolean flag=false;
 		for(int i=0; i<housingListAccepted.size();i++) {
@@ -717,7 +703,7 @@ housingList.get(i).setLocation(newValue);
 		 
 	}
    	
-//	
+
 	public static Boolean WatchingReservations() {
 		boolean flag=false;
 		for(int i=0; i<housingListAccepted.size();i++) {			
@@ -761,7 +747,7 @@ flag=true;
 		 
 		 
 	}
-//
+
     public static Boolean acceptAndReject(int n,Housing housing) {
     	
     	  
@@ -773,12 +759,12 @@ flag=true;
     			return accept=false;
     	}
     	
-//    	 accept;
+
 
     	
     	
     }			
-//
+
     public static boolean ShowHousingj(String usernamee) {
     	boolean flag=false;
 		
@@ -807,7 +793,7 @@ flag=true;
 			  }
 		 return flag;
 			  }  
-//  
+ 
  public static boolean ShowHousingWithId(int id) {
 	   boolean flag=false;
 		
@@ -870,7 +856,6 @@ flag=true;
 		   
    }
 	
-   //
     public static boolean cPanel(String userName) {
     	boolean flag=false;
 			System.out.print("Welcome in Conrtol Panel "+userName);
@@ -922,7 +907,7 @@ flag=true;
 				return flag;  }
     
     
-    //
+    
     public static boolean ifTenIsStudent(String name) {
     	boolean flag=false;
     	for(int ii =0 ; ii<tenantLinst.size();ii++) {
@@ -958,54 +943,18 @@ flag=true;
 		tenant t3 = new tenant("tenantNajeh43","05777777",21," MIS","yes");
 		tenant t4 = new tenant("tenantNajeh42","05666666",20,"Civil Engineering","yes");
 		tenantLinst.add(t1);
-//		System.out.println("t1");
 
 		tenantLinst.add(t2);
-//		System.out.println("t2");
 
 		tenantLinst.add(t3);
-//		System.out.println("t3");
 
 		tenantLinst.add(t4);
-//		System.out.println("t4");
 
 		Residence firstResidence = new Residence(1 , "alsafa" , "nablus" , 3 , 10,"ownerOmar");
 		Residence secondResidence = new Residence(5 , "istanbul" , "nablus" , 3 , 21,"ownerAseel");
 		residenceList.add(firstResidence);
 		residenceList.add(secondResidence);
-		Apartment firstApartment = new Apartment(1,"ownerOmar",1,1,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,true);
-		Apartment secondApartment = new Apartment(2,"ownerAseel",5,1,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1500,"free internet",6,3,2,2,true);
-		Apartment firstApartment2 = new Apartment(11,"ownerOmar",1,2,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,true);
-		Apartment secondApartment2 = new Apartment(22,"ownerAseel",5,2,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1500,"free internet",6,3,2,2,true);
-		Apartment firstApartment3 = new Apartment(111,"ownerOmar",1,1,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,true);
-		Apartment secondApartment3 = new Apartment(222,"ownerAseel",5,3,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1500,"free internet",6,3,2,2,true);
-		Apartment firstApartment1 = new Apartment(1111,"ownerOmar",1,1,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,true);
-		Apartment secondApartment32 = new Apartment(2222,"ownerOmar",1,3,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1500,"free internet",6,3,2,2,true);
-//		apartmentList.add(secondApartment32);
-		
-//		apartmentList.add(firstApartment1);
-//		apartmentList.add(firstApartment);
-//		apartmentList.add(secondApartment);
-//
-//		apartmentList.add(firstApartment3);
-	//	apartmentList.add(secondApartment3);
 
-		//apartmentList.add(firstApartment2);
-//		apartmentList.add(secondApartment2); 
-		
-		Housing firstHousing = new Housing (1,"alsafa" ,"nablus" ,3,100,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,"omar","ownerOmar11","0569696345","omar.112@gmail.com");
-//		housingList.add(firstHousing);
-		Housing firstHousing1 = new Housing (2,"alsafa" ,"nablus" ,3,200,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,"omar","ownerOmar11","0569696345","omar.112@gmail.com");
-//		housingList.add(firstHousing1);
-		Housing firstHousing2 = new Housing (3,"alsafa" ,"nablus" ,3,300,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,"omar","ownerOmar11","0569696345","omar.112@gmail.com");
-//		housingList.add(firstHousing2);
-		Housing firstHousing3 = new Housing (1,"alsafa" ,"nablus" ,3,100,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,"omar","ownerOmar11","0569696345","omar.112@gmail.com");
-//		housingListAccepted.add(firstHousing3);
-		Housing firstHousing4 = new Housing (5,"alsafa" ,"nablus" ,3,600,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,"omar","ownerOmar11","0569696345","omar.112@gmail.com");
-//		housingListAccepted.add(firstHousing4);
-		Housing firstHousing5 = new Housing (6,"alsafa" ,"nablus" ,3,500,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,"omar","ownerOmar11","0569696345","omar.112@gmail.com");
-//		housingListAccepted.add(firstHousing5);
-		
 
     }
     
@@ -1063,7 +1012,7 @@ flag=true;
 	
 	public static void showMenu() {
 		
-		Scanner input3 = new Scanner(System.in);
+		input3 = new Scanner(System.in);
 		if (getUserType().equals("admin"))
 		{
 			System.out.println("\nChoose one :\n1)See housing and accept or reject it. \n2)Watching all accepted house.\n3)Add Housing. \n4)Watching reservations via the system\n5)Close porogram.");
@@ -1084,14 +1033,12 @@ flag=true;
 			tenantProcess(userChoice);
 		}
 		else {
-			//System.out.println("please sign up!");
-			Scanner input2 = new Scanner(System.in);
+			input2 = new Scanner(System.in);
 			System.out.println("Enter your username please");
 		 	username = input2.next();
 			System.out.println("Enter your password please");
 			String pass = input2.next();
 			login(username , pass);
-			//System.out.println(username);
 			showMenu();
 		}
 		
@@ -1103,22 +1050,14 @@ flag=true;
 	public static void main(String args[]) {
 		
 		fullInformation();
-		Scanner input2 = new Scanner(System.in);
+		input22 = new Scanner(System.in);
 		System.out.println("Enter your username please");
-	 	username = input2.next();
+	 	username = input22.next();
 		System.out.println("Enter your password please");
-		String pass = input2.next();
+		String pass = input22.next();
 		login(username , pass);
-		//System.out.println(username);
 		showMenu();
-		//System.out.println(userType);
-//		
-//		for(int i=0;i<housingList.size();i++) {
-//	//		System.out.println(housingList.get(i).getHousingId());
-//		}
-//		
-//		
-		
+	
 		
 		
 		

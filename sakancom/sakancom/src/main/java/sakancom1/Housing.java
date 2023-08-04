@@ -60,6 +60,7 @@ public class Housing {
 		
 	}
 	
+	
 	public void setHousingId() {
 		
 		this.housingId = housingIdFormat(); 
@@ -272,33 +273,6 @@ public String getStatus() {
 	return this.status;
 }
 
-public void showHousing() {              
-	
-	 
-			    System.out.printf("Housing Id: %d  \n" , housingId);
-				System.out.printf("Residence Id: %d  \n" ,residenceId);
-				System.out.printf("Residence Name: %s  \n" , residenceName);
-				System.out.printf("House location: %s  \n" , location);
-				System.out.printf("floor Number : %d  \n" , floorNum);
-				System.out.printf("Apartment Number: %d  \n" , apartmentNum);
-				System.out.printf("House photo: %s  \n" , photo);
-				System.out.printf("House Rent: %d  \n" , rent);
-				System.out.printf("House Services: %s  \n" , services);
-				System.out.printf("Max Number Of Tenant in House : %d  \n" , maxNumOfTenant);
-				System.out.printf("Number Of Bedrooms in House: %d  \n" ,numOfBedrooms);
-				System.out.printf("Number Of Bethrooms in House: %d  \n" ,numOfBathrooms);
-				System.out.printf("Number Of Balcony House: %d  \n" , balcony);
-				System.out.printf("Owner Name to House : %s  \n" , ownerName);
-				System.out.printf("Owner Name to House : %s  \n" , ownerPhone);
-				System.out.printf("Owner Name to House : %s  \n\n" , ownerEmail);
-			 
-		 
-		 
-	 
-	
-	
-}
-	
 }
 
 
