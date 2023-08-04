@@ -17,7 +17,8 @@ public class addFurniture {
 	public void the_furniture_should_be_added_to_this_tenant() {
 		tenant t1 = new tenant("tenantNajeh45","05999999",19,"Comuter Engineering","yes");
 		Main.tenantLinst.add(t1);
-		equals( true==  Main.addUsedFurniture("bed 100","tenantNajeh45"));
+		equals( Main.addUsedFurniture("bed 100","tenantNajeh45")==  true);
+
 	}
 
 }
