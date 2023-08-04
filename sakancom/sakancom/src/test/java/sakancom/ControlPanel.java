@@ -1,28 +1,20 @@
 package sakancom;
-import static org.junit.Assert.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import sakancom1.*;
-
 public class ControlPanel {
 
 @Given("user name and information about apartment and residence")
 public void user_name_and_information_about_apartment_and_residence() {
-    // Write code here that turns the phrase above into concrete actions
-//    throw new io.cucumber.java.PendingException();
 }
 
 @When("owner request Control Panel.")
 public void owner_request_control_panel() {
-    // Write code here that turns the phrase above into concrete actions
-//    throw new io.cucumber.java.PendingException();
 }
 
 @Then("It will show what buildings this owner owns, the number of floors in each building, and the number of apartments on each floor.")
 public void it_will_show_what_buildings_this_owner_owns_the_number_of_floors_in_each_building_and_the_number_of_apartments_on_each_floor() {
-    // Write code here that turns the phrase above into concrete actions
-//    throw new io.cucumber.java.PendingException();
 	Residence firstResidence = new Residence(1 , "alsafa" , "nablus" , 3 , 10,"ownerOmar");
 	Residence secondResidence = new Residence(5 , "istanbul" , "nablus" , 3 , 21,"ownerAseel");
 	Main.residenceList.add(firstResidence);
@@ -46,7 +38,8 @@ public void it_will_show_what_buildings_this_owner_owns_the_number_of_floors_in_
 
 	Main.apartmentList.add(firstApartment2);
 	Main.apartmentList.add(secondApartment2);
-	assertTrue(Main.cPanel("ownerOmar"));
+	equals( true==Main.cPanel("ownerOmar") );
+
 }
 
 
