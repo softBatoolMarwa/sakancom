@@ -4,10 +4,13 @@ package sakancom1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class Main {
-	
+    private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+
 	public static ArrayList <Residence> residenceList = new ArrayList<Residence>();
 	public static ArrayList <tenant> tenantLinst = new ArrayList<tenant>();
 	public static ArrayList <houseAndTennant> houseAndTennantlist = new ArrayList<houseAndTennant>();
@@ -775,24 +778,24 @@ flag=true;
 		
 		 for(int i=0; i<housingList.size();i++) {
 			 if(usernamee.equals(housingList.get(i).getOwnerName())) {
-					System.out.printf("House Id: %d  \n" , housingList.get(i).getHousingId());
-					System.out.printf("Residence Id: %d  \n" ,housingList.get(i).getResidenceId());
-					System.out.printf("Residence Name: %s  \n" , housingList.get(i).getResidenceName());
-					System.out.printf("House location: %s  \n" , housingList.get(i).getLocation());					
-					System.out.printf("floor Number : %d  \n" , housingList.get(i).getFloorNum());
-					System.out.printf("Apartment Number: %d  \n" , housingList.get(i).getApartmentNum());
-					System.out.printf("House photo: %s  \n" , housingList.get(i).getPhoto());
-					System.out.printf("House Rent: %d  \n" , housingList.get(i).getRent());
-					System.out.printf("House Services: %s  \n" , housingList.get(i).getServices());
-					System.out.printf("Max Number Of Tenant in House : %d  \n" , housingList.get(i).getMaxNumOfTenant());
-					System.out.printf("Number Of Bedrooms in House: %d  \n" , housingList.get(i).getNumOfBedrooms());
-					System.out.printf("Number Of Bethrooms in House: %d  \n" , housingList.get(i).getNumOfBathrooms());
-					System.out.printf("Number Of Balcony House: %d  \n" , housingList.get(i).getBalcony());
-					System.out.printf("Owner Name to House : %s  \n" , housingList.get(i).getOwnerName());
-					System.out.printf("Owner Phone to House : %s  \n" , housingList.get(i).getOwnerPhone());
-					System.out.printf("Owner Email to House : %s  \n" , housingList.get(i).getOwnerEmail());
+				 LOGGER.log(Level.INFO,"House Id:   \n" , housingList.get(i).getHousingId());
+					LOGGER.log(Level.INFO,"Residence Id:   \n" ,housingList.get(i).getResidenceId());
+					LOGGER.log(Level.INFO,"Residence Name:   \n" , housingList.get(i).getResidenceName());
+					LOGGER.log(Level.INFO,"House location:   \n" , housingList.get(i).getLocation());					
+					LOGGER.log(Level.INFO,"floor Number :   \n" , housingList.get(i).getFloorNum());
+					LOGGER.log(Level.INFO,"Apartment Number:   \n" , housingList.get(i).getApartmentNum());
+					LOGGER.log(Level.INFO,"House photo:   \n" , housingList.get(i).getPhoto());
+					LOGGER.log(Level.INFO,"House Rent:   \n" , housingList.get(i).getRent());
+					LOGGER.log(Level.INFO,"House Services:   \n" , housingList.get(i).getServices());
+					LOGGER.log(Level.INFO,"Max Number Of Tenant in House :   \n" , housingList.get(i).getMaxNumOfTenant());
+					LOGGER.log(Level.INFO,"Number Of Bedrooms in House:   \n" , housingList.get(i).getNumOfBedrooms());
+					LOGGER.log(Level.INFO,"Number Of Bethrooms in House:   \n" , housingList.get(i).getNumOfBathrooms());
+					LOGGER.log(Level.INFO,"Number Of Balcony House:  \n" , housingList.get(i).getBalcony());
+					LOGGER.log(Level.INFO,"Owner Name to House :   \n" , housingList.get(i).getOwnerName());
+					LOGGER.log(Level.INFO,"Owner Phone to House :   \n" , housingList.get(i).getOwnerPhone());
+					LOGGER.log(Level.INFO,"Owner Email to House :   \n" , housingList.get(i).getOwnerEmail());
 
-					System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+					LOGGER.log(Level.INFO,"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
 	flag=true;
 			 }
 			  }
@@ -808,25 +811,25 @@ flag=true;
 				  
 					
 				  
-					System.out.printf("House Id: %d  \n" , housingList.get(i).getHousingId());
-					System.out.printf("Residence Id: %d  \n" ,housingList.get(i).getResidenceId());
-					System.out.printf("Residence Name: %s  \n" , housingList.get(i).getResidenceName());
-					System.out.printf("House location: %s  \n" , housingList.get(i).getLocation());					
-					System.out.printf("floor Number : %d  \n" , housingList.get(i).getFloorNum());
-					System.out.printf("Apartment Number: %d  \n" , housingList.get(i).getApartmentNum());
-					System.out.printf("House photo: %s  \n" , housingList.get(i).getPhoto());
-					System.out.printf("House Rent: %d  \n" , housingList.get(i).getRent());
-					System.out.printf("House Services: %s  \n" , housingList.get(i).getServices());
-					System.out.printf("Max Number Of Tenant in House : %d  \n" , housingList.get(i).getMaxNumOfTenant());
-					System.out.printf("Number Of Bedrooms in House: %d  \n" , housingList.get(i).getNumOfBedrooms());
-					System.out.printf("Number Of Bethrooms in House: %d  \n" , housingList.get(i).getNumOfBathrooms());
-					System.out.printf("Number Of Balcony House: %d  \n" , housingList.get(i).getBalcony());
-					System.out.printf("Owner Name to House : %s  \n" , housingList.get(i).getOwnerName());
-					System.out.printf("Owner Phone to House : %s  \n" , housingList.get(i).getOwnerPhone());
-					System.out.printf("Owner Email to House : %s  \n" , housingList.get(i).getOwnerEmail());
+			  LOGGER.log(Level.INFO,"House Id:  \n" , housingList.get(i).getHousingId());
+					LOGGER.log(Level.INFO,"Residence Id:  \n" ,housingList.get(i).getResidenceId());
+					LOGGER.log(Level.INFO,"Residence Name:   \n" , housingList.get(i).getResidenceName());
+					LOGGER.log(Level.INFO,"House location:   \n" , housingList.get(i).getLocation());					
+					LOGGER.log(Level.INFO,"floor Number :   \n" , housingList.get(i).getFloorNum());
+					LOGGER.log(Level.INFO,"Apartment Number:   \n" , housingList.get(i).getApartmentNum());
+					LOGGER.log(Level.INFO,"House photo:   \n" , housingList.get(i).getPhoto());
+					LOGGER.log(Level.INFO,"House Rent:   \n" , housingList.get(i).getRent());
+					LOGGER.log(Level.INFO,"House Services:   \n" , housingList.get(i).getServices());
+					LOGGER.log(Level.INFO,"Max Number Of Tenant in House :   \n" , housingList.get(i).getMaxNumOfTenant());
+					LOGGER.log(Level.INFO,"Number Of Bedrooms in House:   \n" , housingList.get(i).getNumOfBedrooms());
+					LOGGER.log(Level.INFO,"Number Of Bethrooms in House:   \n" , housingList.get(i).getNumOfBathrooms());
+					LOGGER.log(Level.INFO,"Number Of Balcony House:   \n" , housingList.get(i).getBalcony());
+					LOGGER.log(Level.INFO,"Owner Name to House :   \n" , housingList.get(i).getOwnerName());
+					LOGGER.log(Level.INFO,"Owner Phone to House :   \n" , housingList.get(i).getOwnerPhone());
+					LOGGER.log(Level.INFO,"Owner Email to House :   \n" , housingList.get(i).getOwnerEmail());
 					
 
-					System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+					LOGGER.log(Level.INFO,"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
 					flag=true;
 		  }
 			  }
@@ -834,10 +837,10 @@ flag=true;
 			  }
   
    public static void printInfoForCpanelOwner(int j,int m) {
-	   System.out.print("Aapartment Id :"+apartmentList.get(j).getId()+"    ");
-		System.out.print("number of balcony :"+apartmentList.get(j).getBalcony()+"   ");
-				System.out.print("number of bedrooms :"+apartmentList.get(j).getBedrooms()+"   ");
-				System.out.print("number of bathrooms :"+apartmentList.get(j).getBathrooms()+"   ");
+	   LOGGER.log(Level.INFO,"Aapartment Id :"+apartmentList.get(j).getId()+"    ");
+	   LOGGER.log(Level.INFO,"number of balcony :"+apartmentList.get(j).getBalcony()+"   ");
+		LOGGER.log(Level.INFO,"number of bedrooms :"+apartmentList.get(j).getBedrooms()+"   ");
+				LOGGER.log(Level.INFO,"number of bathrooms :"+apartmentList.get(j).getBathrooms()+"   ");
 				
 				
 				
@@ -846,17 +849,21 @@ flag=true;
 				String result = res + apa ;
 				int housingId = Integer.parseInt(result);
 				  
-				System.out.print("House Id  :"+housingId+"   \n");
+				LOGGER.log(Level.INFO,"House Id  :"+housingId+"   \n");
+				
 				 
 			
 		
 		
 		for(int jj=0; jj<houseAndTennantlist.size();jj++) {
 			if(	housingId == houseAndTennantlist.get(jj).gethousingId()) {
-				System.out.print("\nTenant Name :"+houseAndTennantlist.get(jj).getTenants()+"   ");
+ 				LOGGER.log(Level.INFO,"\nTenant Name :"+houseAndTennantlist.get(jj).getTenants()+"   ");
+
+				
 				for(int jjj=0; jjj<tenantLinst.size();jjj++) {
 					if(	tenantLinst.get(jjj).getname().equals(houseAndTennantlist.get(jj).getTenants())) {
-						System.out.print("Tenant phone :"+tenantLinst.get(jjj).getphone()+"   ");
+		 				LOGGER.log(Level.INFO,"Tenant phone :"+tenantLinst.get(jjj).getphone()+"   ");
+
 						}}}}
 		   
    }
@@ -868,9 +875,9 @@ flag=true;
 			for (int m =0 ; m<residenceList.size();m++) {
 				if(residenceList.get(m).getOwnerId().equals(userName)) {
 					flag=true;
-					System.out.println("\n||||||||||||||||||||||||||||||||||||||||||\nId for your residence is : "+ residenceList.get(m).getId());
-					System.out.println("Number Of Floor is :"+ residenceList.get(m).getNumOfFloors());
-					
+	 				LOGGER.log(Level.INFO,"\n||||||||||||||||||||||||||||||||||||||||||\nId for your residence is : "+ residenceList.get(m).getId());
+	 				LOGGER.log(Level.INFO,"Number Of Floor is :"+ residenceList.get(m).getNumOfFloors());
+
 					
 					
 					for(int j=0; j<apartmentList.size();j++) {
@@ -881,20 +888,24 @@ flag=true;
 							
 							if(apartmentList.get(j).getResidenceId() == residenceList.get(m).getId() ) {
 								if(	apartmentList.get(j).getFloorNum() ==1 ) {
-								System.out.println("\nThe (first) floor have this apartment : ");
+					 				LOGGER.log(Level.INFO,"\nThe (first) floor have this apartment : ");
+
+								
 								printInfoForCpanelOwner(j,m);
 								flag=true;
 								}
 							
 								
 								if(	apartmentList.get(j).getFloorNum() ==2 ) {
-									System.out.println("\nThe (secend) floor have this apartment : ");
+					 				LOGGER.log(Level.INFO,"\nThe (secend) floor have this apartment : ");
+
 									printInfoForCpanelOwner(j,m);
 									flag=true;
 									}
 								
 								if(	apartmentList.get(j).getFloorNum() ==3 ) {
-									System.out.println("\nThe (Third) floor have this apartment : ");
+					 				LOGGER.log(Level.INFO,"\nThe (Third) floor have this apartment : ");
+
 									printInfoForCpanelOwner(j,m);
 									flag=true;
 									}
@@ -924,11 +935,13 @@ flag=true;
         		if(tenantLinst.get(i).getIsStudent().equals("yes") ) {
         			
         			if(!(tenantLinst.get(i).getname().equals(name))) {
- 				System.out.println("*********Student Neighbors Information:*********");
- 				System.out.println("Student Name:"+tenantLinst.get(i).getname());
- 				System.out.println("Student phone:"+tenantLinst.get(i).getphone());
- 				System.out.println("Student age:"+tenantLinst.get(i).getage());
- 				System.out.println("Student majer:"+tenantLinst.get(i).getmajer());
+ 				LOGGER.log(Level.INFO,"*********Student Neighbors Information:*********");
+ 				LOGGER.log(Level.INFO,"Student Name:"+tenantLinst.get(i).getname());
+ 				LOGGER.log(Level.INFO,"Student phone:"+tenantLinst.get(i).getphone());
+ 				LOGGER.log(Level.INFO,"Student age:"+tenantLinst.get(i).getage());
+ 				LOGGER.log(Level.INFO,"Student majer:"+tenantLinst.get(i).getmajer());
+
+ 				
  				flag=true;
         			}
 
@@ -1020,28 +1033,31 @@ flag=true;
 		input3 = new Scanner(System.in);
 		if (getUserType().equals("admin"))
 		{
-			System.out.println("\nChoose one :\n1)See housing and accept or reject it. \n2)Watching all accepted house.\n3)Add Housing. \n4)Watching reservations via the system\n5)Close porogram.");
-			System.out.println("what your choice?");
+
+			LOGGER.log(Level.INFO,"\nChoose one :\n1)See housing and accept or reject it. \n2)Watching all accepted house.\n3)Add Housing. \n4)Watching reservations via the system\n5)Close porogram." );
+
+			LOGGER.log(Level.INFO,"what your choice?");
 			int userChoice = input3.nextInt();
 			AdminProcess(userChoice);
 		}
 		else if (getUserType().equals("owner")) {
-			System.out.println("\nChoose one :\n1)Add Housing .\n2)Your control panel. \n3) Modify housing.\n4)Show housing for accept ot reject  from admin. \n5)Show housing  acepted from admin.\n6)Close porogram.");
-			System.out.println("what your choice?");
+			LOGGER.log(Level.INFO,"\nChoose one :\n1)Add Housing .\n2)Your control panel. \n3) Modify housing.\n4)Show housing for accept ot reject  from admin. \n5)Show housing  acepted from admin.\n6)Close porogram.");
+
+			LOGGER.log(Level.INFO,"what your choice?");
 			int userChoice = input3.nextInt();
 			ownerProcess(userChoice);
 		}	
 		else if (getUserType().equals("tenant")) {
-			System.out.println("\nChoose one :\n1)ability to view the available housing. \n2)ability to view information about houses. \n3)Book accommodation. \n4)See information who live araund you (if you are student.)\n5)Add Furniture.\n6)show your Furniture. \n7)control panel \n8)Close porogram.");
-			System.out.println("what your choice?");
+			LOGGER.log(Level.INFO,"\nChoose one :\n1)ability to view the available housing. \n2)ability to view information about houses. \n3)Book accommodation. \n4)See information who live araund you (if you are student.)\n5)Add Furniture.\n6)show your Furniture. \n7)control panel \n8)Close porogram.");
+			LOGGER.log(Level.INFO,"what your choice?");
 			int userChoice = input3.nextInt();
 			tenantProcess(userChoice);
 		}
 		else {
 			input2 = new Scanner(System.in);
-			System.out.println("Enter your username please");
+			LOGGER.log(Level.INFO,"Enter your username please");
 		 	username = input2.next();
-			System.out.println("Enter your password please");
+		 	LOGGER.log(Level.INFO,"Enter your password please");
 			String pass = input2.next();
 			login(username , pass);
 			showMenu();
@@ -1056,9 +1072,9 @@ flag=true;
 		
 		fullInformation();
 		input22 = new Scanner(System.in);
-		System.out.println("Enter your username please");
+		LOGGER.log(Level.INFO,"Enter your username please");
 	 	username = input22.next();
-		System.out.println("Enter your password please");
+	 	LOGGER.log(Level.INFO,"Enter your password please");
 		String pass = input22.next();
 		login(username , pass);
 		showMenu();
