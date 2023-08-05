@@ -837,8 +837,8 @@ flag=true;
    public static void printInfoForCpanelOwner(int j,int m) {
 	   LOGGER.log(Level.INFO,"Aapartment Id : {0}    ",apartmentList.get(j).getId());
 	   LOGGER.log(Level.INFO,"number of balcony :{0}   ",apartmentList.get(j).getBalcony());
-		LOGGER.log(Level.INFO,"number of bedrooms :{0}    "+apartmentList.get(j).getBedrooms());
-				LOGGER.log(Level.INFO,"number of bathrooms :{0}     "+apartmentList.get(j).getBathrooms());
+		LOGGER.log(Level.INFO,"number of bedrooms :{0}    ",apartmentList.get(j).getBedrooms());
+				LOGGER.log(Level.INFO,"number of bathrooms :{0}     ",apartmentList.get(j).getBathrooms());
 				
 				
 				
@@ -847,7 +847,7 @@ flag=true;
 				String result = res + apa ;
 				int housingId = Integer.parseInt(result);
 				  
-				LOGGER.log(Level.INFO,"House Id  :{0}  \n"+housingId);
+				LOGGER.log(Level.INFO,"House Id  :{0}  \n",housingId);
 				
 				 
 			
