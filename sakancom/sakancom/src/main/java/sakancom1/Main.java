@@ -14,13 +14,13 @@ public class Main {
     
     private static final String SPACE = "      ";
 
-	public static ArrayList <Residence> residenceList = new ArrayList<Residence>();
-	public static ArrayList <tenant> tenantLinst = new ArrayList<tenant>();
-	public static ArrayList <houseAndTennant> houseAndTennantlist = new ArrayList<houseAndTennant>();
-	public static ArrayList <Apartment> apartmentList = new ArrayList<Apartment>();
-	public static ArrayList <User> users = new ArrayList<User>();
-	public static ArrayList <Housing> housingList = new ArrayList<Housing>();
-	public static ArrayList <Housing> housingListAccepted = new ArrayList<Housing>();
+    public  static ArrayList <Residence> residenceList = new ArrayList<Residence>();
+    public static ArrayList <tenant> tenantLinst = new ArrayList<tenant>();
+    public static ArrayList <houseAndTennant> houseAndTennantlist = new ArrayList<houseAndTennant>();
+    public static ArrayList <Apartment> apartmentList = new ArrayList<Apartment>();
+    public static ArrayList <User> users = new ArrayList<User>();
+    public static ArrayList <Housing> housingList = new ArrayList<Housing>();
+    public static ArrayList <Housing> housingListAccepted = new ArrayList<Housing>();
 
 	private static  Scanner input1;
 	private static String userType = "none" ;

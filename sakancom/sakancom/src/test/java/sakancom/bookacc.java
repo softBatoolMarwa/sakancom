@@ -2,7 +2,7 @@ package sakancom;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import sakancom.Main;
+import sakancom1.Main;
 
 public class bookacc {
 	@Given("Id")
