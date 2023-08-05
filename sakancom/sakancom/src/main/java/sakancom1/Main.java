@@ -123,7 +123,7 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 							LOGGER.log(Level.INFO,"The owner Email is  : ");
 							LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerEmail() );
 							LOGGER.log(Level.INFO,"The Residence Id is  : {0}",housingListAccepted.get(jj).getResidenceId());
-							LOGGER.log(Level.INFO,"The Rent is  :{0} "+housingListAccepted.get(jj).getRent());
+							LOGGER.log(Level.INFO,"The Rent is  :{0} ",housingListAccepted.get(jj).getRent());
 							LOGGER.log(Level.INFO,"Please pay the rent within the next month.");
 							LOGGER.log(Level.INFO,"||||||||||||||||||||||||||||||||||||||||||||");
 
@@ -282,7 +282,7 @@ return h;	}
 		LOGGER.log(Level.INFO,"Your Houses ... ");
 		for (int i=0 ; i<housingList.size() ;i++) {
     	if(housingList.get(i).getOwnerName().equals(username)) 
-    		LOGGER.log(Level.INFO,housingList.get(i).getHousingId()+"     ");
+    		LOGGER.log(Level.INFO,"{0}    ",housingList.get(i).getHousingId());
     
 		}
 		
@@ -352,7 +352,9 @@ return h;	}
 	int numOfBathrooms = input4.nextInt();
 	LOGGER.log(Level.INFO,"is there a balcony in the apartment? if ");
 	int balcony = input4.nextInt();
-	LOGGER.log(Level.INFO,"The name of the owner has been entered. If you want to change it, go to the Modify field. The name of the owner is: \n"+username);
+	LOGGER.log(Level.INFO,"The name of the owner has been entered. If you want to change it, go to the Modify field. The name of the owner is: \n");
+	LOGGER.log(Level.INFO,username);
+
 	String ownerName = username;
 	LOGGER.log(Level.INFO,"Enter the owner phone :");
 	String ownerPhone = input4.next();
@@ -673,8 +675,10 @@ LOGGER.log(Level.INFO,"Done this update on location");
 	public static Boolean showTenantToAdmin() {
 		boolean flag=false;
 		for(int i=0 ; i<houseAndTennantlist.size();i++) {
-			LOGGER.log(Level.INFO,"house id : "+houseAndTennantlist.get(i).gethousingId()+"|| have this ||"+houseAndTennantlist.get(i).getTenants());
-			
+			LOGGER.log(Level.INFO,"house id : {0}",houseAndTennantlist.get(i).gethousingId());
+		 	LOGGER.log(Level.INFO,"|| have this ||");
+		 	LOGGER.log(Level.INFO,houseAndTennantlist.get(i).getTenants());
+
 
 			flag=true;
 		}
@@ -699,22 +703,36 @@ LOGGER.log(Level.INFO,"Done this update on location");
 	}
    	
 	 public static void showFromHousingListAccepted(int i) {
-		 LOGGER.log(Level.INFO,"\nHouse Id:   " , housingListAccepted.get(i).getHousingId());
-			LOGGER.log(Level.INFO,"\nResidence Id:   " ,housingListAccepted.get(i).getResidenceId());
-			LOGGER.log(Level.INFO,"\nResidence Name:   " , housingListAccepted.get(i).getResidenceName());
-			LOGGER.log(Level.INFO,"\nHouse location:   " , housingListAccepted.get(i).getLocation());					
-			LOGGER.log(Level.INFO,"\nfloor Number :   " , housingListAccepted.get(i).getFloorNum());
-			LOGGER.log(Level.INFO,"\nApartment Number:  " , housingListAccepted.get(i).getApartmentNum());
-			LOGGER.log(Level.INFO,"\nHouse photo:   " , housingListAccepted.get(i).getPhoto());
-			LOGGER.log(Level.INFO,"\nHouse Rent:   " , housingListAccepted.get(i).getRent());
-			LOGGER.log(Level.INFO,"\nHouse Services:   " , housingListAccepted.get(i).getServices());
-			LOGGER.log(Level.INFO,"\nMax Number Of Tenant in House :   " , housingListAccepted.get(i).getMaxNumOfTenant());
-			LOGGER.log(Level.INFO,"\nNumber Of Bedrooms in House:   " , housingListAccepted.get(i).getNumOfBedrooms());
-			LOGGER.log(Level.INFO,"\nNumber Of Bethrooms in House:   " , housingListAccepted.get(i).getNumOfBathrooms());
-			LOGGER.log(Level.INFO,"\nNumber Of Balcony House:   " , housingListAccepted.get(i).getBalcony());
-			LOGGER.log(Level.INFO,"\nOwner Name to House :   " , housingListAccepted.get(i).getOwnerName());
-			LOGGER.log(Level.INFO,"\nOwner Phone to House :   " , housingListAccepted.get(i).getOwnerPhone());
-			LOGGER.log(Level.INFO,"\nOwner Email to House :   " , housingListAccepted.get(i).getOwnerEmail());
+		 LOGGER.log(Level.INFO,"\nHouse Id:  {0} " , housingListAccepted.get(i).getHousingId());
+			LOGGER.log(Level.INFO,"\nResidence Id:   {0}" ,housingListAccepted.get(i).getResidenceId());
+			LOGGER.log(Level.INFO,"\nResidence Name:   ");
+		 	LOGGER.log(Level.INFO, housingListAccepted.get(i).getResidenceName());
+
+			LOGGER.log(Level.INFO,"\nHouse location:   " );
+		 	LOGGER.log(Level.INFO, housingListAccepted.get(i).getLocation());
+
+			LOGGER.log(Level.INFO,"\nfloor Number :  {0} " , housingListAccepted.get(i).getFloorNum());
+			LOGGER.log(Level.INFO,"\nApartment Number: {0} " , housingListAccepted.get(i).getApartmentNum());
+			LOGGER.log(Level.INFO,"\nHouse photo:   " );
+		 	LOGGER.log(Level.INFO, housingListAccepted.get(i).getPhoto());
+
+			LOGGER.log(Level.INFO,"\nHouse Rent:   {0}" , housingListAccepted.get(i).getRent());
+			LOGGER.log(Level.INFO,"\nHouse Services:   " );
+		 	LOGGER.log(Level.INFO, housingListAccepted.get(i).getServices());
+
+			LOGGER.log(Level.INFO,"\nMax Number Of Tenant in House :   {0}" , housingListAccepted.get(i).getMaxNumOfTenant());
+			LOGGER.log(Level.INFO,"\nNumber Of Bedrooms in House:   {0}" , housingListAccepted.get(i).getNumOfBedrooms());
+			LOGGER.log(Level.INFO,"\nNumber Of Bethrooms in House:   {0}" , housingListAccepted.get(i).getNumOfBathrooms());
+			LOGGER.log(Level.INFO,"\nNumber Of Balcony House:   {0}" , housingListAccepted.get(i).getBalcony());
+			LOGGER.log(Level.INFO,"\nOwner Name to House :   ");
+		 	LOGGER.log(Level.INFO, housingListAccepted.get(i).getOwnerName());
+
+			LOGGER.log(Level.INFO,"\nOwner Phone to House :   " );
+		 	LOGGER.log(Level.INFO, housingListAccepted.get(i).getOwnerPhone());
+
+			LOGGER.log(Level.INFO,"\nOwner Email to House :   " );
+		 	LOGGER.log(Level.INFO, housingListAccepted.get(i).getOwnerEmail());
+
 			LOGGER.log(Level.INFO,"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
 		 
 	 }
@@ -748,23 +766,41 @@ flag=true;
     	
     }			
     public static void showFromHousingList(int i) {
-    	LOGGER.log(Level.INFO,"\nHouse Id:   " , housingList.get(i).getHousingId());
-		LOGGER.log(Level.INFO,"\nResidence Id:   " ,housingList.get(i).getResidenceId());
-		LOGGER.log(Level.INFO,"\nResidence Name:   " , housingList.get(i).getResidenceName());
-		LOGGER.log(Level.INFO,"\nHouse location:   " , housingList.get(i).getLocation());					
-		LOGGER.log(Level.INFO,"\nfloor Number :   " , housingList.get(i).getFloorNum());
-		LOGGER.log(Level.INFO,"\nApartment Number:   " , housingList.get(i).getApartmentNum());
-		LOGGER.log(Level.INFO,"\nHouse photo:   " , housingList.get(i).getPhoto());
-		LOGGER.log(Level.INFO,"\nHouse Rent:   " , housingList.get(i).getRent());
-		LOGGER.log(Level.INFO,"\nHouse Services:   " , housingList.get(i).getServices());
-		LOGGER.log(Level.INFO,"\nMax Number Of Tenant in House :   " , housingList.get(i).getMaxNumOfTenant());
-		LOGGER.log(Level.INFO,"\nNumber Of Bedrooms in House:   " , housingList.get(i).getNumOfBedrooms());
-		LOGGER.log(Level.INFO,"\nNumber Of Bethrooms in House:   " , housingList.get(i).getNumOfBathrooms());
-		LOGGER.log(Level.INFO,"\nNumber Of Balcony House:  " , housingList.get(i).getBalcony());
-		LOGGER.log(Level.INFO,"\nOwner Name to House :   " , housingList.get(i).getOwnerName());
-		LOGGER.log(Level.INFO,"\nOwner Phone to House :   " , housingList.get(i).getOwnerPhone());
-		LOGGER.log(Level.INFO,"\nOwner Email to House :   " , housingList.get(i).getOwnerEmail());
+    	
+    	 LOGGER.log(Level.INFO,"\nHouse Id:  {0} " , housingList.get(i).getHousingId());
+			LOGGER.log(Level.INFO,"\nResidence Id:   {0}" ,housingList.get(i).getResidenceId());
+			LOGGER.log(Level.INFO,"\nResidence Name:   ");
+		 	LOGGER.log(Level.INFO, housingList.get(i).getResidenceName());
 
+			LOGGER.log(Level.INFO,"\nHouse location:   " );
+		 	LOGGER.log(Level.INFO, housingList.get(i).getLocation());
+
+			LOGGER.log(Level.INFO,"\nfloor Number :  {0} " , housingList.get(i).getFloorNum());
+			LOGGER.log(Level.INFO,"\nApartment Number: {0} " , housingList.get(i).getApartmentNum());
+			LOGGER.log(Level.INFO,"\nHouse photo:   " );
+		 	LOGGER.log(Level.INFO, housingList.get(i).getPhoto());
+
+			LOGGER.log(Level.INFO,"\nHouse Rent:   {0}" , housingList.get(i).getRent());
+			LOGGER.log(Level.INFO,"\nHouse Services:   " );
+		 	LOGGER.log(Level.INFO, housingList.get(i).getServices());
+
+			LOGGER.log(Level.INFO,"\nMax Number Of Tenant in House :   {0}" , housingList.get(i).getMaxNumOfTenant());
+			LOGGER.log(Level.INFO,"\nNumber Of Bedrooms in House:   {0}" , housingList.get(i).getNumOfBedrooms());
+			LOGGER.log(Level.INFO,"\nNumber Of Bethrooms in House:   {0}" , housingList.get(i).getNumOfBathrooms());
+			LOGGER.log(Level.INFO,"\nNumber Of Balcony House:   {0}" , housingList.get(i).getBalcony());
+			LOGGER.log(Level.INFO,"\nOwner Name to House :   ");
+		 	LOGGER.log(Level.INFO, housingList.get(i).getOwnerName());
+
+			LOGGER.log(Level.INFO,"\nOwner Phone to House :   " );
+		 	LOGGER.log(Level.INFO, housingList.get(i).getOwnerPhone());
+
+			LOGGER.log(Level.INFO,"\nOwner Email to House :   " );
+		 	LOGGER.log(Level.INFO, housingList.get(i).getOwnerEmail());
+
+    	
+    	
+    	
+    	
 		LOGGER.log(Level.INFO,"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
     	
     	
@@ -834,8 +870,9 @@ flag=true;
 			for (int m =0 ; m<residenceList.size();m++) {
 				if(residenceList.get(m).getOwnerId().equals(userName)) {
 					flag=true;
-	 				LOGGER.log(Level.INFO,"\n||||||||||||||||||||||||||||||||||||||||||\nId for your residence is : "+ residenceList.get(m).getId());
-	 				LOGGER.log(Level.INFO,"Number Of Floor is :"+ residenceList.get(m).getNumOfFloors());
+	 				LOGGER.log(Level.INFO,"\n||||||||||||||||||||||||||||||||||||||||||\nId for your residence is : {0}"+ residenceList.get(m).getId());
+
+	 				LOGGER.log(Level.INFO,"Number Of Floor is : {0}", residenceList.get(m).getNumOfFloors());
 
 					
 					
