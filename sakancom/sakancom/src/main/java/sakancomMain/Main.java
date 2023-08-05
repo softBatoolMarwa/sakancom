@@ -13,6 +13,11 @@ public class Main {
     private static final String YOURCHOICE = "what your choice?";
     private static final String ADMIN = "admin";
     private static final String OWNER = "owner";
+    private static final String SOON = "See you soon!";
+    private static final String ENTERPASS = "Enter your password please";
+    private static final String ENTERNAME = "Enter your username please";
+
+
     private static final String ENTERVLAUWTOEDIT = "Enter new value to edit .. ";
 
 
@@ -199,11 +204,11 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		showMenu();
 
 		   break;
-		case 8 :LOGGER.log(Level.INFO,"See you soon!");
+		case 8 :LOGGER.log(Level.INFO,SOON);
 		Scanner input2 = new Scanner(System.in);
-		LOGGER.log(Level.INFO,"Enter your username please");
+		LOGGER.log(Level.INFO,ENTERNAME);
 	 	username = input2.next();
-	 	LOGGER.log(Level.INFO,"Enter your password please");
+	 	LOGGER.log(Level.INFO,ENTERPASS);
 		String pass = input2.next();
 		login(username , pass);
 		showMenu();
@@ -316,11 +321,11 @@ return h;	}
 		WatchingReservationstoOwner();
 		showMenu();
 	break;	
-	case 6 :LOGGER.log(Level.INFO,"See you soon!");
+	case 6 :LOGGER.log(Level.INFO,SOON);
 	Scanner input2 = new Scanner(System.in);
-	LOGGER.log(Level.INFO,"Enter your username please");
+	LOGGER.log(Level.INFO,ENTERNAME);
  	username = input2.next();
- 	LOGGER.log(Level.INFO,"Enter your password please");
+ 	LOGGER.log(Level.INFO,ENTERPASS);
 	String pass = input2.next();
 	login(username , pass);
 	showMenu();
@@ -662,11 +667,11 @@ LOGGER.log(Level.INFO,"Done this update on location");
 		
         break; 
         
-		case 5 :LOGGER.log(Level.INFO,"See you soon!");
+		case 5 :LOGGER.log(Level.INFO,SOON);
 		Scanner input2 = new Scanner(System.in);
-		LOGGER.log(Level.INFO,"Enter your username please");
+		LOGGER.log(Level.INFO,ENTERNAME);
 	 	username = input2.next();
-	 	LOGGER.log(Level.INFO,"Enter your password please");
+	 	LOGGER.log(Level.INFO,ENTERPASS);
 		String pass = input2.next();
 		login(username , pass);
 		showMenu();
@@ -1071,9 +1076,9 @@ flag=true;
 		}
 		else {
 			input2 = new Scanner(System.in);
-			LOGGER.log(Level.INFO,"Enter your username please");
+			LOGGER.log(Level.INFO,ENTERNAME);
 		 	username = input2.next();
-		 	LOGGER.log(Level.INFO,"Enter your password please");
+		 	LOGGER.log(Level.INFO,ENTERPASS);
 			String pass = input2.next();
 			login(username , pass);
 			showMenu();
@@ -1089,9 +1094,9 @@ flag=true;
 
 		fullInformation();
 		input22 = new Scanner(System.in);
-		LOGGER.log(Level.INFO,"Enter your username please");
+		LOGGER.log(Level.INFO,ENTERNAME);
 	 	username = input22.next();
-	 	LOGGER.log(Level.INFO,"Enter your password please");
+	 	LOGGER.log(Level.INFO,ENTERPASS);
 		String pass = input22.next();
 		login(username , pass);
 		showMenu();
