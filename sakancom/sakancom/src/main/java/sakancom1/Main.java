@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
-
+    private static final String YOURCHOICE = "what your choice?";
 	public static ArrayList <Residence> residenceList = new ArrayList<Residence>();
 	public static ArrayList <tenant> tenantLinst = new ArrayList<tenant>();
 	public static ArrayList <houseAndTennant> houseAndTennantlist = new ArrayList<houseAndTennant>();
@@ -977,20 +977,20 @@ flag=true;
 
 			LOGGER.log(Level.INFO,"\nChoose one :\n1)See housing and accept or reject it. \n2)Watching all accepted house.\n3)Add Housing. \n4)Watching reservations via the system\n5)Close porogram." );
 
-			LOGGER.log(Level.INFO,"what your choice?");
+			LOGGER.log(Level.INFO,YOURCHOICE);
 			int userChoice = input3.nextInt();
 			AdminProcess(userChoice);
 		}
 		else if (getUserType().equals("owner")) {
 			LOGGER.log(Level.INFO,"\nChoose one :\n1)Add Housing .\n2)Your control panel. \n3) Modify housing.\n4)Show housing for accept ot reject  from admin. \n5)Show housing  acepted from admin.\n6)Close porogram.");
 
-			LOGGER.log(Level.INFO,"what your choice?");
+			LOGGER.log(Level.INFO,YOURCHOICE);
 			int userChoice = input3.nextInt();
 			ownerProcess(userChoice);
 		}	
 		else if (getUserType().equals("tenant")) {
 			LOGGER.log(Level.INFO,"\nChoose one :\n1)ability to view the available housing. \n2)ability to view information about houses. \n3)Book accommodation. \n4)See information who live araund you (if you are student.)\n5)Add Furniture.\n6)show your Furniture. \n7)control panel \n8)Close porogram.");
-			LOGGER.log(Level.INFO,"what your choice?");
+			LOGGER.log(Level.INFO,YOURCHOICE);
 			int userChoice = input3.nextInt();
 			tenantProcess(userChoice);
 		}
