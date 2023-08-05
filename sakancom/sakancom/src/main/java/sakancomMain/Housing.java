@@ -56,7 +56,7 @@ public class Housing {
 		String apa = Integer.toString(apartmentNum);
 		String result = res + apa ;
 		
-		return residenceId=Integer.parseInt(result);
+		return Integer.parseInt(result);
 		
 	}
 	
