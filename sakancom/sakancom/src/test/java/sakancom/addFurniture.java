@@ -2,7 +2,7 @@ package sakancom;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import sakancomMain.*;
+import sakancommain.*;
 
 public class addFurniture {
 	@Given("information about furniture")
