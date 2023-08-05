@@ -1,9 +1,8 @@
 package sakancom;
-import static org.junit.Assert.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import sakancom1.*;
+import sakancomMain.*;
 
 public class showacceptedhouse {
 

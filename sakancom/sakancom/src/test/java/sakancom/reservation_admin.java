@@ -1,10 +1,9 @@
 package sakancom;
-import static org.junit.Assert.assertTrue;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import sakancom1.*;
+import sakancomMain.*;
 
 public class reservation_admin {
 	@Given("reservations via the system")

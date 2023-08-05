@@ -55,7 +55,7 @@ public class Housing {
 		String res = Integer.toString(residenceId);
 		String apa = Integer.toString(apartmentNum);
 		String result = res + apa ;
-		int housingId = Integer.parseInt(result);
+		housingId = Integer.parseInt(result);
 		return housingId;
 		
 	}
