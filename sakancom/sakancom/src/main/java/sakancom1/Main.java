@@ -11,6 +11,9 @@ import java.util.logging.Logger;
 public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
     private static final String YOURCHOICE = "what your choice?";
+    
+    private static final String SPACE = "      ";
+
 	public static ArrayList <Residence> residenceList = new ArrayList<Residence>();
 	public static ArrayList <tenant> tenantLinst = new ArrayList<tenant>();
 	public static ArrayList <houseAndTennant> houseAndTennantlist = new ArrayList<houseAndTennant>();
@@ -832,10 +835,10 @@ flag=true;
 			  }
   
    public static void printInfoForCpanelOwner(int j,int m) {
-	   LOGGER.log(Level.INFO,"Aapartment Id :"+apartmentList.get(j).getId()+"    ");
-	   LOGGER.log(Level.INFO,"number of balcony :"+apartmentList.get(j).getBalcony()+"   ");
-		LOGGER.log(Level.INFO,"number of bedrooms :"+apartmentList.get(j).getBedrooms()+"   ");
-				LOGGER.log(Level.INFO,"number of bathrooms :"+apartmentList.get(j).getBathrooms()+"   ");
+	   LOGGER.log(Level.INFO,"Aapartment Id : {0}    ",apartmentList.get(j).getId());
+	   LOGGER.log(Level.INFO,"number of balcony :{0}   ",apartmentList.get(j).getBalcony());
+		LOGGER.log(Level.INFO,"number of bedrooms :{0}    "+apartmentList.get(j).getBedrooms());
+				LOGGER.log(Level.INFO,"number of bathrooms :{0}     "+apartmentList.get(j).getBathrooms());
 				
 				
 				
@@ -844,7 +847,7 @@ flag=true;
 				String result = res + apa ;
 				int housingId = Integer.parseInt(result);
 				  
-				LOGGER.log(Level.INFO,"House Id  :"+housingId+"   \n");
+				LOGGER.log(Level.INFO,"House Id  :{0}  \n"+housingId);
 				
 				 
 			
@@ -852,12 +855,17 @@ flag=true;
 		
 		for(int jj=0; jj<houseAndTennantlist.size();jj++) {
 			if(	housingId == houseAndTennantlist.get(jj).gethousingId()) {
- 				LOGGER.log(Level.INFO,"\nTenant Name :"+houseAndTennantlist.get(jj).getTenants()+"   ");
+ 				LOGGER.log(Level.INFO,"\nTenant Name :");
+ 				LOGGER.log(Level.INFO,houseAndTennantlist.get(jj).getTenants());
+ 				LOGGER.log(Level.INFO,SPACE);
 
 				
 				for(int jjj=0; jjj<tenantLinst.size();jjj++) {
 					if(	tenantLinst.get(jjj).getname().equals(houseAndTennantlist.get(jj).getTenants())) {
-		 				LOGGER.log(Level.INFO,"Tenant phone :"+tenantLinst.get(jjj).getphone()+"   ");
+		 				LOGGER.log(Level.INFO,"Tenant phone :");
+		 				LOGGER.log(Level.INFO,tenantLinst.get(jjj).getphone());
+		 				LOGGER.log(Level.INFO,SPACE);
+
 
 						}}}}
 		   
@@ -865,12 +873,13 @@ flag=true;
 	
     public static boolean cPanel(String userName) {
     	boolean flag=false;
-    	LOGGER.log(Level.INFO,"Welcome in Conrtol Panel "+userName);
+    	LOGGER.log(Level.INFO,"Welcome in Conrtol Panel ");
+    	LOGGER.log(Level.INFO,userName);
 
 			for (int m =0 ; m<residenceList.size();m++) {
 				if(residenceList.get(m).getOwnerId().equals(userName)) {
 					flag=true;
-	 				LOGGER.log(Level.INFO,"\n||||||||||||||||||||||||||||||||||||||||||\nId for your residence is : {0}"+ residenceList.get(m).getId());
+	 				LOGGER.log(Level.INFO,"\n||||||||||||||||||||||||||||||||||||||||||\nId for your residence is : {0}", residenceList.get(m).getId());
 
 	 				LOGGER.log(Level.INFO,"Number Of Floor is : {0}", residenceList.get(m).getNumOfFloors());
 
@@ -932,10 +941,16 @@ flag=true;
         			
         			if(!(tenantLinst.get(i).getname().equals(name))) {
  				LOGGER.log(Level.INFO,"*********Student Neighbors Information:*********");
- 				LOGGER.log(Level.INFO,"Student Name:"+tenantLinst.get(i).getname());
- 				LOGGER.log(Level.INFO,"Student phone:"+tenantLinst.get(i).getphone());
- 				LOGGER.log(Level.INFO,"Student age:"+tenantLinst.get(i).getage());
- 				LOGGER.log(Level.INFO,"Student majer:"+tenantLinst.get(i).getmajer());
+ 				LOGGER.log(Level.INFO,"Student Name:");
+ 				LOGGER.log(Level.INFO,tenantLinst.get(i).getname());
+
+ 				LOGGER.log(Level.INFO,"Student phone:");
+ 				LOGGER.log(Level.INFO,tenantLinst.get(i).getname());
+
+ 				LOGGER.log(Level.INFO,"Student age:{0}",tenantLinst.get(i).getage());
+ 				LOGGER.log(Level.INFO,"Student majer:");
+ 				LOGGER.log(Level.INFO,tenantLinst.get(i).getname());
+
 
  				
  				flag=true;
