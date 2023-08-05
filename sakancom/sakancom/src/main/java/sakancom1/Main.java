@@ -93,25 +93,37 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		for (int i=0 ; i<tenantLinst.size() ; i++) {
 		if(tenantLinst.get(i).getname().equals(usernamee)) {
 			a=true;
-			LOGGER.log(Level.INFO,"your name : "+tenantLinst.get(i).getname());
-			LOGGER.log(Level.INFO,"your phone : "+tenantLinst.get(i).getphone());
-			LOGGER.log(Level.INFO,"your age : "+tenantLinst.get(i).getage());
-			LOGGER.log(Level.INFO,"your majer : "+tenantLinst.get(i).getmajer());
-			LOGGER.log(Level.INFO,"your furniture : "+tenantLinst.get(i).getFurniture());
+			LOGGER.log(Level.INFO,"your name : ");
+			LOGGER.log(Level.INFO,tenantLinst.get(i).getname() );
+			
+			
+			LOGGER.log(Level.INFO,"your phone : ");
+			LOGGER.log(Level.INFO,tenantLinst.get(i).getphone() );
+			
+			LOGGER.log(Level.INFO,"your age :  {0} ",tenantLinst.get(i).getage());
+			
+			LOGGER.log(Level.INFO,"your majer : ");
+			LOGGER.log(Level.INFO,tenantLinst.get(i).getmajer() );
+			
+			LOGGER.log(Level.INFO,"your furniture : ");
+			LOGGER.log(Level.INFO,tenantLinst.get(i).getFurniture() );
 			
 			for (int j=0 ; j<houseAndTennantlist.size() ; j++) {
 				if(usernamee.equals(houseAndTennantlist.get(j).getTenants())) {
-					LOGGER.log(Level.INFO,"The apartment number booked in your name is  : "+houseAndTennantlist.get(j).gethousingId());
+					LOGGER.log(Level.INFO,"The apartment number booked in your name is : {0}  ",houseAndTennantlist.get(j).gethousingId() );
 					IdHouse=houseAndTennantlist.get(j).gethousingId();
 				
 					
 					for (int jj=0 ; jj<housingListAccepted.size() ; jj++) {
 						if(IdHouse==housingListAccepted.get(jj).getHousingId()) {
-							LOGGER.log(Level.INFO,"The owner Name is   : "+housingListAccepted.get(jj).getOwnerName());
-							LOGGER.log(Level.INFO,"The owner Phone is  : "+housingListAccepted.get(jj).getOwnerPhone());
-							LOGGER.log(Level.INFO,"The owner Email is  : "+housingListAccepted.get(jj).getOwnerEmail());
-							LOGGER.log(Level.INFO,"The Residence Id is  : "+housingListAccepted.get(jj).getResidenceId());
-							LOGGER.log(Level.INFO,"The Rent is  : "+housingListAccepted.get(jj).getRent());
+							LOGGER.log(Level.INFO,"The owner Name is   : ");
+							LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerName() );
+							LOGGER.log(Level.INFO,"The owner Phone is  : ");
+							LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerPhone() );
+							LOGGER.log(Level.INFO,"The owner Email is  : ");
+							LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerEmail() );
+							LOGGER.log(Level.INFO,"The Residence Id is  : {0}",housingListAccepted.get(jj).getResidenceId());
+							LOGGER.log(Level.INFO,"The Rent is  :{0} "+housingListAccepted.get(jj).getRent());
 							LOGGER.log(Level.INFO,"Please pay the rent within the next month.");
 							LOGGER.log(Level.INFO,"||||||||||||||||||||||||||||||||||||||||||||");
 
@@ -150,7 +162,7 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 			input1 = new Scanner(System.in);
 			LOGGER.log(Level.INFO,"what your choice from avalible housing ?");
 			for(int j=0; j<housingListAccepted.size();j++) {
-				LOGGER.log(Level.INFO,housingListAccepted.get(j).getHousingId()+"     ");
+				LOGGER.log(Level.INFO,"{0}       ",housingListAccepted.get(j).getHousingId());
 			}
 			int id = input1.nextInt();
 			bookAccommodation(id);
@@ -189,10 +201,7 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		showMenu();
 				  break;
 		
-		case 9: for(int i=0 ; i<tenantLinst.size();i++) {
-			LOGGER.log(Level.INFO,tenantLinst.get(i).getname()+"   ");}
-			showMenu();
-			  break;
+		
 		  default:showMenu();
 
 		   break;
@@ -205,8 +214,14 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		boolean flag=false;
 		for(int j=0; j<housingListAccepted.size();j++) {
 
-			LOGGER.log(Level.INFO,"House Id:   " + housingListAccepted.get(j).getHousingId()+" ||||||||   " +housingListAccepted.get(j).getStatus()+"\n");
-flag=true;
+			LOGGER.log(Level.INFO,"House Id:   {0}" , housingListAccepted.get(j).getHousingId());
+		 	LOGGER.log(Level.INFO," ||||||||   " );
+		 	LOGGER.log(Level.INFO,housingListAccepted.get(j).getStatus());
+		 	LOGGER.log(Level.INFO,"\n");
+
+
+
+			flag=true;
 		}
 		return flag;
 	}
@@ -1013,8 +1028,8 @@ flag=true;
 
 	
 	public static void main(String args[]) {
-		
-	
+
+
 		fullInformation();
 		input22 = new Scanner(System.in);
 		LOGGER.log(Level.INFO,"Enter your username please");
