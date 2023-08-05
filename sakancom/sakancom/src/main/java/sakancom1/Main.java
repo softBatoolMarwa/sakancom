@@ -58,8 +58,11 @@ public static  Boolean isUserFound (String userName , String passWord) {
 			
 			if (t.equals(tenantLinst.get(i).getname()) )  {
 				if (tenantLinst.get(i).getFurniture()!=null) {
-					LOGGER.log(Level.INFO,"I have this used furniture for sale at good prices :\n" + tenantLinst.get(i).getFurniture() );
-				returnn= true;
+					LOGGER.log(Level.INFO,"I have this used furniture for sale at good prices :\n" , tenantLinst.get(i).getFurniture() );
+		
+					
+					
+					returnn= true;
 				}
 				else {
 					LOGGER.log(Level.INFO,"I dont have any used furniture for sale \n");
@@ -90,15 +93,15 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		for (int i=0 ; i<tenantLinst.size() ; i++) {
 		if(tenantLinst.get(i).getname().equals(usernamee)) {
 			a=true;
-			LOGGER.log(Level.INFO,"your name : "+tenantLinst.get(i).getname());
-			LOGGER.log(Level.INFO,"your phone : "+tenantLinst.get(i).getphone());
-			LOGGER.log(Level.INFO,"your age : "+tenantLinst.get(i).getage());
-			LOGGER.log(Level.INFO,"your majer : "+tenantLinst.get(i).getmajer());
-			LOGGER.log(Level.INFO,"your furniture : "+tenantLinst.get(i).getFurniture());
+			LOGGER.log(Level.INFO,"your name : ",tenantLinst.get(i).getname());
+			LOGGER.log(Level.INFO,"your phone : ",tenantLinst.get(i).getphone());
+			LOGGER.log(Level.INFO,"your age : ",tenantLinst.get(i).getage());
+			LOGGER.log(Level.INFO,"your majer : ",tenantLinst.get(i).getmajer());
+			LOGGER.log(Level.INFO,"your furniture : ",tenantLinst.get(i).getFurniture());
 			
 			for (int j=0 ; j<houseAndTennantlist.size() ; j++) {
 				if(usernamee.equals(houseAndTennantlist.get(j).getTenants())) {
-					LOGGER.log(Level.INFO,"The apartment number booked in your name is  : "+houseAndTennantlist.get(j).gethousingId());
+					LOGGER.log(Level.INFO,"The apartment number booked in your name is  : ",houseAndTennantlist.get(j).gethousingId());
 					IdHouse=houseAndTennantlist.get(j).gethousingId();
 				
 					
