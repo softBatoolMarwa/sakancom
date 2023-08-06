@@ -28,26 +28,24 @@ public class Housing {
 
 
 
-	public Housing(int residenceId, String residenceName, String location, int floorNum, int apartmentNum, String photo,
-			int rent, String services, int maxNumOfTenant, int numOfBedrooms, int numOfBathrooms, int balcony,
-			String ownerName,String username,String ownerPhone, String ownerEmail) {
+	public Housing(Housing h) {
 		super();
-		this.residenceId = residenceId;
-		this.residenceName = residenceName;
-		this.location = location;
-		this.floorNum = floorNum;
-		this.apartmentNum = apartmentNum;
-		this.photo = photo;
-		this.rent = rent;
-		this.services = services;
-		this.maxNumOfTenant = maxNumOfTenant;
-		this.numOfBedrooms = numOfBedrooms;
-		this.numOfBathrooms = numOfBathrooms;
-		this.balcony = balcony;
-		this.ownerUserName = username;
-		this.ownerName = ownerName;
-		this.ownerPhone = ownerPhone;
-		this.ownerEmail = ownerEmail;
+		this.residenceId = h.getResidenceId();
+		this.residenceName = h.getResidenceName();
+		this.location = h.getLocation();
+		this.floorNum = h.getFloorNum();
+		this.apartmentNum = h.getApartmentNum();
+		this.photo = h.getPhoto();
+		this.rent = h.getRent();
+		this.services = h.getServices();
+		this.maxNumOfTenant = h.getMaxNumOfTenant();
+		this.numOfBedrooms = h.getNumOfBedrooms();
+		this.numOfBathrooms = h.getNumOfBathrooms();
+		this.balcony = h.getBalcony();
+		this.ownerUserName = h.getOwnerUserName();
+		this.ownerName = h.getOwnerName();
+		this.ownerPhone = h.getOwnerPhone();
+		this.ownerEmail = h.getOwnerEmail();
 	}
 	
 	public int housingIdFormat() {   /***  to concate residenceId and apartmentNum  ***/

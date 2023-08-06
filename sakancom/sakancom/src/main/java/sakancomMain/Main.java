@@ -373,7 +373,26 @@ return h;	}
 	String ownerPhone = input4.next();
 	LOGGER.log(Level.INFO,"Enter the owner email :");
 	String ownerEmail= input4.next(); 
-	Housing h= new Housing(residenceId ,residenceName,location,floorNumber,apartmentNumber,photo,rent,services, maxNum,numOfBedrooms,numOfBathrooms,balcony,username,ownerName,ownerPhone,ownerEmail);
+	Housing hh = new Housing();
+	hh.setResidenceId(residenceId);
+	hh.setResidenceName(residenceName);
+	hh.setLocation(location);
+	hh.setFloorNum(floorNumber);
+	hh.setApartmentNum(apartmentNumber);
+	hh.setPhoto(photo);
+	hh.setRent(rent);
+	hh.setServices(services);
+	hh.setMaxNumOfTenant(maxNum);
+	hh.setNumOfBedrooms(numOfBedrooms);
+	hh.setNumOfBathrooms(numOfBathrooms);
+	hh.setBalcony(balcony);
+	hh.setOwnerUserName(username);
+	hh.setOwnerName(ownerName);
+	hh.setOwnerPhone(ownerPhone);
+	hh.setOwnerEmail(ownerEmail);
+	
+    Housing h = new Housing (hh);
+	
 	Apartment apa = new Apartment();
 	apa.setId(apartmentNumber);
 	apa.setOwnerId(username);
