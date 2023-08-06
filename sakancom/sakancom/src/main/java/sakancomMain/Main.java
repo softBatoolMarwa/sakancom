@@ -13,6 +13,8 @@ public class Main {
     private static final String YOURCHOICE = "what your choice?";
     private static final String ADMIN = "admin";
     private static final String OWNER = "owner";
+    private static final String TENANT = "tenant";
+
     private static final String SOON = "See you soon!";
     private static final String ENTERPASS = "Enter your password please";
     private static final String ENTERNAME = "Enter your username please";
@@ -1047,8 +1049,8 @@ flag=true;
 					setUserType(OWNER);
 				}
 				
-				else if (userName.startsWith("tenant")) {
-					setUserType("tenant");
+				else if (userName.startsWith(TENANT)) {
+					setUserType(TENANT);
 				}
 				else {
 					setUserType("none");
@@ -1083,7 +1085,7 @@ flag=true;
 			int userChoice = input3.nextInt();
 			ownerProcess(userChoice);
 		}	
-		else if (getUserType().equals("tenant")) {
+		else if (getUserType().equals(TENANT)) {
 			LOGGER.log(Level.INFO,"\nChoose one :\n1)ability to view the available housing. \n2)ability to view information about houses. \n3)Book accommodation. \n4)See information who live araund you (if you are student.)\n5)Add Furniture.\n6)show your Furniture. \n7)control panel \n8)Close porogram.");
 			LOGGER.log(Level.INFO,YOURCHOICE);
 			int userChoice = input3.nextInt();
