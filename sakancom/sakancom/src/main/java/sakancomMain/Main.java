@@ -424,7 +424,8 @@ return h;	}
 				}
 				if (flag ==0 ) {housingListAccepted.add(h);
 				LOGGER.log(Level.INFO,"your housing has been added successfully");
-				return	housing_not_found= true;
+				housing_not_found= true;
+				return	housing_not_found;
 				}
 				else {
 					LOGGER.log(Level.INFO,"this housing is already exist");
@@ -445,7 +446,8 @@ return h;	}
 			}
 			if (flag ==0 ) {housingList.add(h);
 			LOGGER.log(Level.INFO,"your housing has been added successfully");
-			return	housing_not_found= true;
+			housing_not_found= true;
+			return	housing_not_found;
 			}
 			else {
 				LOGGER.log(Level.INFO,"this housing is already exist");
@@ -569,9 +571,8 @@ LOGGER.log(Level.INFO,"Done this update on location");
     	scanner2 = new Scanner(System.in);
     	 for(int i=0; i<housingList.size();i++) {
 
-    		 if(usernamee.equals(housingList.get(i).getOwnerName())) {
+    		 if(usernamee.equals(housingList.get(i).getOwnerName())&&(id == housingList.get(i).getHousingId())) {
     		 
-			 if(id == housingList.get(i).getHousingId()) {
 			    	 if(number==1) {
 			    		 LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
 					     int resId = scanner2.nextInt(); 
@@ -660,7 +661,7 @@ LOGGER.log(Level.INFO,"Done this update on location");
 				else { return false;
 			     	   }
 
-}
+
     	 }	
 				 
 				 
@@ -799,12 +800,13 @@ flag=true;
     public static Boolean acceptAndReject(int n,Housing housing) {
     	
     	  
-    	if(n==1) { housingListAccepted.add(housing); housingList.remove(housing);	return accept=true;		}
+    	if(n==1) { housingListAccepted.add(housing); housingList.remove(housing);	accept=true; return accept;		}
     	else if(n==2) {housingList.remove(housing);	
     	return false;
     	}
     	else {LOGGER.log(Level.INFO,"Enter true value !!!");
-    			return accept=false;
+    	accept=false;
+    			return accept;
     	}
     	
 
@@ -962,10 +964,8 @@ flag=true;
     
      
         	for(int i =0 ; i<tenantLinst.size();i++) {
-        		if(tenantLinst.get(i).getIsStudent().equals("yes") ) {
-        			
-        			if(!(tenantLinst.get(i).getname().equals(name))) {
- 				LOGGER.log(Level.INFO,"*********Student Neighbors Information:*********");
+        		if(tenantLinst.get(i).getIsStudent().equals("yes") &&(!(tenantLinst.get(i).getname().equals(name)))) {
+        			 				LOGGER.log(Level.INFO,"*********Student Neighbors Information:*********");
  				LOGGER.log(Level.INFO,"Student Name:");
  				LOGGER.log(Level.INFO,tenantLinst.get(i).getname());
 
@@ -979,7 +979,7 @@ flag=true;
 
  				
  				flag=true;
-        			}
+        			
 
         	}
         } }
