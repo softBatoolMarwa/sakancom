@@ -15,22 +15,24 @@ public class Apartment {
 	private Integer balcony;
 	private Boolean available;
 	
+	
 	public Apartment() {}
 	
-	public Apartment (int id , String ownerId , int residenceId, int floorNum, String photo , int monthlyRent , String services , int maxNum , int bedrooms , int bathrooms , int balcony , Boolean available ){
+	public Apartment (Apartment ap ){
+		this.id = ap.getId();
+		this.ownerId = ap.getOwnerId();
+		this.residenceId = ap.getResidenceId();
+		this.floorNum = ap.getFloorNum();
+		this.photo = ap.getPhoto();
+		this.monthlyRent = ap.getMonthlyRent();
+		this.services = ap.getServices();
+		this.maxNum = ap.getMaxNum();
+		this.bedrooms = ap.getBedrooms();
+		this.bathrooms = ap.getBathrooms();
+		this.balcony = ap.getBalcony();
+		this.available = ap.getAvailable();
 		
-		this.id = id;
-		this.ownerId = ownerId;
-		this.residenceId = residenceId;
-		this.floorNum = floorNum;
-		this.photo = photo;
-		this.monthlyRent = monthlyRent;
-		this.services = services;
-		this.maxNum = maxNum;
-		this.bedrooms = bedrooms;
-		this.bathrooms = bathrooms;
-		this.balcony = balcony;
-		this.available = available;
+		
 	}
 	
 	public void setId (int id) {

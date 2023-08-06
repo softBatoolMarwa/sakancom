@@ -374,7 +374,20 @@ return h;	}
 	LOGGER.log(Level.INFO,"Enter the owner email :");
 	String ownerEmail= input4.next(); 
 	Housing h= new Housing(residenceId ,residenceName,location,floorNumber,apartmentNumber,photo,rent,services, maxNum,numOfBedrooms,numOfBathrooms,balcony,username,ownerName,ownerPhone,ownerEmail);
-	Apartment secondApartment32 = new Apartment(apartmentNumber,username,residenceId,floorNumber,photo,rent,services,maxNum,numOfBedrooms,numOfBathrooms,balcony,true);
+	Apartment apa = new Apartment();
+	apa.setId(apartmentNumber);
+	apa.setOwnerId(username);
+	apa.setResidenceId(residenceId);
+	apa.setFloorNum(floorNumber);
+	apa.setPhoto(photo);
+	apa.setMonthlyRent(rent);
+	apa.setServices(services);
+	apa.setMaxNum(maxNum);
+	apa.setBedrooms(numOfBedrooms);
+	apa.setBathrooms(numOfBathrooms);
+	apa.setBalcony(balcony);
+	apa.setAvailable(true);
+	Apartment secondApartment32 = new Apartment(apa);
 	apartmentList.add(secondApartment32);
 		
 		return h;
