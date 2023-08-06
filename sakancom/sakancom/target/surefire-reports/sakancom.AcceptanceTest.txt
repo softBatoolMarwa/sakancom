@@ -1,0 +1,80 @@
+-------------------------------------------------------------------------------
+Test set: sakancom.AcceptanceTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 4, Errors: 2, Skipped: 0, Time elapsed: 0.794 s <<< FAILURE! - in sakancom.AcceptanceTest
+Scenes of requests for advertisement of housing and the ability to accept and reject it..when  (acceptance)admins request to see advertisement of housing .  Time elapsed: 0.041 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'Advertisement of housing' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Advertisement of housing")
+public void advertisementOfHousing() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Admin acceptance of the owners request to view the house")
+public void adminAcceptanceOfTheOwnersRequestToViewTheHouse() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("add house in ads and delete house from ad requests.")
+public void addHouseInAdsAndDeleteHouseFromAdRequests() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Scenes of requests for advertisement of housing and the ability to accept and reject it..when (reject)admins request to see advertisement of housing .  Time elapsed: 0.009 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'Advertisement of housing' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Advertisement of housing")
+public void advertisementOfHousing() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Admin reject of the owners request to view the house")
+public void adminRejectOfTheOwnersRequestToViewTheHouse() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Delete home from ad requests")
+public void deleteHomeFromAdRequests() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Login.owner True-> uname and True-> password  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at sakancom.login_test.i_can_log_in_the_system_as_an_owner_and_the_owner_menu_will_appear(login_test.java:47)
+	at ✽.i can log in the system as an owner and The owner menu will appear(file:///C:/Users/jomaa/Downloads/sakancom/sakancom/Use_Cases/provided/login.feature:6)
+
+Login.admin True-> uname and True-> password  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at sakancom.login_test.i_can_log_in_the_system_as_an_admin_and_the_owner_menu_will_appear(login_test.java:97)
+	at ✽.i can log in the system as an admin and The owner menu will appear(file:///C:/Users/jomaa/Downloads/sakancom/sakancom/Use_Cases/provided/login.feature:16)
+
+Login.tenant True-> uname and True-> password  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at sakancom.login_test.i_can_log_in_the_system_as_an_tenant_and_the_owner_menu_will_appear(login_test.java:127)
+	at ✽.i can log in the system as an tenant and The owner menu will appear(file:///C:/Users/jomaa/Downloads/sakancom/sakancom/Use_Cases/provided/login.feature:26)
+
+Login.Decid what the role from the username  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at sakancom.login_test.then_no_menu_will_appear(login_test.java:158)
+	at ✽.then no menu will appear(file:///C:/Users/jomaa/Downloads/sakancom/sakancom/Use_Cases/provided/login.feature:36)
+
