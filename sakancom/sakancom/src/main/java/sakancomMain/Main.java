@@ -428,8 +428,8 @@ return h;	}
 				}
 				else {
 					LOGGER.log(Level.INFO,"this housing is already exist");
-					
-					return housing_not_found = false;
+					housing_not_found = false;
+					return housing_not_found ;
 					
 				   
 				}
@@ -449,12 +449,14 @@ return h;	}
 			}
 			else {
 				LOGGER.log(Level.INFO,"this housing is already exist");
-				
-				return housing_not_found = false;
+				housing_not_found = false;
+				return housing_not_found ;
 				
 			   
 			}}
-		else {return housing_not_found = false;}
+		else {
+			housing_not_found = false;
+			return housing_not_found ;}
 			
 			
 	
