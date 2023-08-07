@@ -14,16 +14,12 @@ public class houseAndTennant {
 	}
 	
 
-	public void setTenants(String  tenants) {
-		this.tenants = tenants;
-	}
+	
 	public String getTenants() {
 		return tenants;
 	}
 	
-	public void sethousingId(int housingId) {
-		this.housingId = housingId;
-	}
+	
 	
 	public int gethousingId() {
 		return housingId;

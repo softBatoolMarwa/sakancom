@@ -1,4 +1,4 @@
-Feature: View the available housing
+Feature: View the infotnation about available housing
  
   Scenario: when admins request to see the available housing . 
     Given available housing

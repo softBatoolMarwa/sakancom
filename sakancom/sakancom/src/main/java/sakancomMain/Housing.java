@@ -59,11 +59,7 @@ public class Housing {
 	}
 	
 	
-	public void setHousingId() {
-		
-		this.housingId = housingIdFormat(); 
-		
-	}
+
 
 	public int getHousingId() {
 		

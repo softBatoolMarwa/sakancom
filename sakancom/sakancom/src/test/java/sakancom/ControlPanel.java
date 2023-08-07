@@ -19,25 +19,28 @@ public void it_will_show_what_buildings_this_owner_owns_the_number_of_floors_in_
 	Residence secondResidence = new Residence(5 , "istanbul" , "nablus" , 3 , 21,"ownerAseel");
 	Main.residenceList.add(firstResidence);
 	Main.residenceList.add(secondResidence);
-	Apartment firstApartment = new Apartment(1,"ownerOmar",1,1,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,true);
-	Apartment secondApartment = new Apartment(2,"ownerAseel",5,1,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1500,"free internet",6,3,2,2,true);
-	Apartment firstApartment2 = new Apartment(11,"ownerOmar",1,2,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,true);
-	Apartment secondApartment2 = new Apartment(22,"ownerAseel",5,2,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1500,"free internet",6,3,2,2,true);
-	Apartment firstApartment3 = new Apartment(111,"ownerOmar",1,1,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,true);
-	Apartment secondApartment3 = new Apartment(222,"ownerAseel",5,3,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1500,"free internet",6,3,2,2,true);
-	Apartment firstApartment1 = new Apartment(1111,"ownerOmar",1,1,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1200,"elevator",4,2,2,1,true);
-	Apartment secondApartment32 = new Apartment(2222,"ownerOmar",1,3,"https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link",1500,"free internet",6,3,2,2,true);
+	
+	Apartment apa = new Apartment();
+	apa.setId(1);
+	apa.setOwnerId("ownerOmar");
+	apa.setResidenceId(1);
+	apa.setFloorNum(1);
+	apa.setPhoto("https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link");
+	apa.setMonthlyRent(1200);
+	apa.setServices("elevator");
+	apa.setMaxNum(4);
+	apa.setBedrooms(2);
+	apa.setBathrooms(2);
+	apa.setBalcony(1);
+	apa.setAvailable(true);
+	Apartment secondApartment32 = new Apartment(apa);
 	Main.apartmentList.add(secondApartment32);
 	
-	Main.apartmentList.add(firstApartment1);
-	Main.apartmentList.add(firstApartment);
-	Main.apartmentList.add(secondApartment);
+	
 
-	Main.apartmentList.add(firstApartment3);
-	Main.apartmentList.add(secondApartment3);
+	
+	
 
-	Main.apartmentList.add(firstApartment2);
-	Main.apartmentList.add(secondApartment2);
 	equals( true==Main.cPanel("ownerOmar") );
 
 }

@@ -72,7 +72,7 @@ public static  Boolean isUserFound (String userName , String passWord) {
 		for (int i=0 ; i<tenantLinst.size() ; i++) {
 			
 			if (t.equals(tenantLinst.get(i).getname()) )  {
-				if (tenantLinst.get(i).getFurniture()!=null) {
+				if (tenantLinst.get(i).getFurniture()!= "" ) {
 					String neww=  tenantLinst.get(i).getFurniture()   ;
 					LOGGER.log(Level.INFO,"I have this used furniture for sale at good prices :\n" );
 					LOGGER.log(Level.INFO,neww );
@@ -164,6 +164,7 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		case 1 :
 			
 			ShowStatusOfHousing();	
+			
 		showMenu();
 				
 		           break; 
@@ -320,7 +321,7 @@ return h;	}
 			break;
 			
 	case 5 : 		
-		WatchingReservationstoOwner();
+		WatchingReservationstoOwner(username);
 		showMenu();
 	break;	
 	case 6 :LOGGER.log(Level.INFO,SOON);
@@ -738,10 +739,10 @@ LOGGER.log(Level.INFO,"Done this update on location");
 	
 	
 
-	public static Boolean WatchingReservationstoOwner() {
+	public static Boolean WatchingReservationstoOwner(String n) {
 		boolean flag=false;
 		for(int i=0; i<housingListAccepted.size();i++) {
-		if(housingListAccepted.get(i).getOwnerName().equals(username)) {
+		if(housingListAccepted.get(i).getOwnerName().equals(n)) {
 	  
 			showFromHousingListAccepted(i);  
 			flag=true;
@@ -802,12 +803,11 @@ flag=true;
     public static Boolean acceptAndReject(int n,Housing housing) {
     	
     	  
-    	if(n==1) { housingListAccepted.add(housing); housingList.remove(housing);	accept=true; return accept;		}
+    	if(n==1) { housingListAccepted.add(housing); housingList.remove(housing);	accept=true; 		}
     	else if(n==2) {housingList.remove(housing);	
-    	return false;
+    	accept=false; 	
     	}
-    	else {LOGGER.log(Level.INFO,"Enter true value !!!");
-    	accept=false;
+    	
     			return accept;
     	}
     	
@@ -815,7 +815,7 @@ flag=true;
 
     	
     	
-    }			
+    			
     public static void showFromHousingList(int i) {
     	
     	 LOGGER.log(Level.INFO,"\nHouse Id:  {0} " , housingList.get(i).getHousingId());
@@ -989,7 +989,7 @@ flag=true;
         } return flag;}
     
     
-    public static void fullInformation() {
+    public static boolean fullInformation() {
     	
     	
 		
@@ -1011,7 +1011,7 @@ flag=true;
 		residenceList.add(firstResidence);
 		residenceList.add(secondResidence);
 
-
+return true;
     }
     
     public static String login(String userName , String passWord) {     /***  for log in as admin or owner or tenant  ***/
@@ -1069,26 +1069,27 @@ flag=true;
 	public static void showMenu() {
 		
 		input3 = new Scanner(System.in);
+		int userChoice;
 		if (getUserType().equals(ADMIN))
 		{
 
 			LOGGER.log(Level.INFO,"\nChoose one :\n1)See housing and accept or reject it. \n2)Watching all accepted house.\n3)Add Housing. \n4)Watching reservations via the system\n5)Close porogram." );
 
 			LOGGER.log(Level.INFO,YOURCHOICE);
-			int userChoice = input3.nextInt();
+			 userChoice = input3.nextInt();
 			AdminProcess(userChoice);
 		}
 		else if (getUserType().equals(OWNER)) {
 			LOGGER.log(Level.INFO,"\nChoose one :\n1)Add Housing .\n2)Your control panel. \n3) Modify housing.\n4)Show housing for accept ot reject  from admin. \n5)Show housing  acepted from admin.\n6)Close porogram.");
 
 			LOGGER.log(Level.INFO,YOURCHOICE);
-			int userChoice = input3.nextInt();
+			 userChoice = input3.nextInt();
 			ownerProcess(userChoice);
 		}	
 		else if (getUserType().equals(TENANT)) {
 			LOGGER.log(Level.INFO,"\nChoose one :\n1)ability to view the available housing. \n2)ability to view information about houses. \n3)Book accommodation. \n4)See information who live araund you (if you are student.)\n5)Add Furniture.\n6)show your Furniture. \n7)control panel \n8)Close porogram.");
 			LOGGER.log(Level.INFO,YOURCHOICE);
-			int userChoice = input3.nextInt();
+			 userChoice = input3.nextInt();
 			tenantProcess(userChoice);
 		}
 		else {

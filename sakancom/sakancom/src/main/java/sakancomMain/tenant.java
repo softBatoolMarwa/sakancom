@@ -11,7 +11,7 @@ public class tenant {
 		private int age;
 		private String majer;
 		private String IsStudent;
-        private String furniture = null;
+        private String furniture = "" ;
 		
 
 		
@@ -27,48 +27,38 @@ public class tenant {
 			this.age = age;
 			this.majer = majer;
 			this.IsStudent = IsStudent;
-			
+			this.furniture="";
 			
 		}
 		
 
-		public void setIsStudent(String IsStudent) {
-			this.IsStudent = IsStudent;
-		}
+		
 		public String getIsStudent() {
 			return IsStudent;
 		}
 		
 		
 		
-		public void setname(String name) {
-			this.name = name;
-		}
+		
 		public String getname() {
 			return name;
 		}
 		
 		
 		
-		public void setphone(String phone) {
-			this.phone = phone ;
-		}
+	
 		
 		public String getphone() {
 			return phone;
 		}
 		
-		public void setage(int age) {
-			this.age = age;
-		}
+		
 		
 		public int getage() {
 			return age;
 		}
 		
-		public void setmajer(String majer) {
-			this.majer = majer ;
-		}
+		
 		
 		public String getmajer() {
 			return majer;
