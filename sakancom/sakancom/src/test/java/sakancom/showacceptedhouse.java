@@ -47,7 +47,7 @@ public void view_the_accepted_housing() {
 	
 	
 	boolean c=Main.acceptAndReject(1,h);
-	equals( true==Main.WatchingReservations() );
+	equals( true==Main.watchingReservations() );
 
 }
 

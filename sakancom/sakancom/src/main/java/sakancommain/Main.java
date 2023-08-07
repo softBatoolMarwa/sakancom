@@ -169,7 +169,7 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 				
 		           break; 
 		           
-		case  2 :  WatchingReservations();
+		case  2 :  watchingReservations();
 					showMenu();
 		          break;
 		          
@@ -316,12 +316,12 @@ return h;	}
 		
 			
 	case 4 :		LOGGER.log(Level.INFO,"this all housing for acepted ot reject  from admin");
-					ShowHousingj(username);
+					showHousingj(username);
 			showMenu();
 			break;
 			
 	case 5 : 		
-		WatchingReservationstoOwner(username);
+		watchingReservationstoOwner(username);
 		showMenu();
 	break;	
 	case 6 :LOGGER.log(Level.INFO,SOON);
@@ -572,84 +572,86 @@ LOGGER.log(Level.INFO,"Done this update on location");
     public static boolean editHousing(int number,int id,String usernamee) {
 
     	scanner2 = new Scanner(System.in);
+    	int newint;
+    	String newstr;
     	 for(int i=0; i<housingList.size();i++) {
 
     		 if(usernamee.equals(housingList.get(i).getOwnerName())&&(id == housingList.get(i).getHousingId())) {
     		 
 			    	 if(number==1) {
 			    		 LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-					     int resId = scanner2.nextInt(); 
-					     editHousing2( number, id, resId );
+			    		 newint = scanner2.nextInt(); 
+					     editHousing2( number, id, newint );
 			    	 
 			    	 }
 				 if(number==2) {
 					 LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-					String resNmae = scanner2.next();
-					editHousing1( number, id, resNmae );
+					 newstr = scanner2.next();
+					editHousing1( number, id, newstr );
 				
 				}
 				 if(number==3) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				String location = scanner2.next(); 
-				editHousing1( number, id, location );
+				 newstr = scanner2.next(); 
+				editHousing1( number, id, newstr );
 				}
 				 if(number==4) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-			    int floorNum = scanner2.nextInt();
-			     editHousing2( number, id, floorNum );
+				 newint = scanner2.nextInt();
+			     editHousing2( number, id, newint );
 
 				}
 				 if(number==5) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				int apartmentNum = scanner2.nextInt();
-			     editHousing2( number, id, apartmentNum );
+				 newint = scanner2.nextInt();
+			     editHousing2( number, id, newint );
 
 				}
 				 if(number==6) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				String photo = scanner2.next();
-				editHousing1( number, id, photo );
+				 newstr = scanner2.next();
+				editHousing1( number, id, newstr );
 				}
 				 if(number==7) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				int rent = scanner2.nextInt();
-			     editHousing2( number, id, rent );
+				 newint = scanner2.nextInt();
+			     editHousing2( number, id, newint );
 
 }
 				 if(number==8) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				String services = scanner2.next();
-				editHousing1( number, id, services );
+				 newstr = scanner2.next();
+				editHousing1( number, id, newstr );
 
 
 				}
 				 if(number==9) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				int max = scanner2.nextInt();
-			     editHousing2( number, id, max );
+				 newint = scanner2.nextInt();
+			     editHousing2( number, id, newint );
 
 }
 				 if(number==10) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				int bed = scanner2.nextInt();
-			     editHousing2( number, id, bed );
+				 newint = scanner2.nextInt();
+			     editHousing2( number, id, newint );
 
 }
 				 if(number==11) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				int bath = scanner2.nextInt();
-			     editHousing2( number, id, bath );
+				 newint = scanner2.nextInt();
+			     editHousing2( number, id, newint );
 
 }
 				 if(number==12) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 int balcony = scanner2.nextInt();
-			     editHousing2( number, id, balcony );
+				 newint = scanner2.nextInt();
+			     editHousing2( number, id, newint );
 
 }
 				 if(number==13) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-			String	name = scanner2.next();
-			editHousing1( number, id, name );
+				 newstr = scanner2.next();
+			editHousing1( number, id, newstr );
 
 }
 				 if(number==14) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				String phone = scanner2.next();
-				editHousing1( number, id, phone );
+				 newstr = scanner2.next();
+				editHousing1( number, id, newstr );
 
 }
 				 if(number==15) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				String email = scanner2.next();
-				editHousing1( number, id, email );
+				 newstr = scanner2.next();
+				editHousing1( number, id, newstr );
 
 }
 				 if(number==16) {
@@ -672,13 +674,13 @@ LOGGER.log(Level.INFO,"Done this update on location");
 		return true;}
 
 
-	public static void AdminProcess(int choice) {
+	public static void adminProcess(int choice) {
 		
 		switch(choice) {
 		
 		case 1 :LOGGER.log(Level.INFO,"accept And Reject!");
 		  for(int i=0; i<housingList.size();i++) {
-			  ShowHousingWithId(housingList.get(i).getHousingId());		
+			  showHousingWithId(housingList.get(i).getHousingId());		
 			scanner = new Scanner(System.in);
 			LOGGER.log(Level.INFO,"Enter 1 to accept this House and Enter 2 to Reject this House... ");
 			int n = scanner.nextInt();
@@ -688,7 +690,7 @@ LOGGER.log(Level.INFO,"Done this update on location");
 			showMenu();
 		         break; 
 		           
-		case  2 :  WatchingReservations();	
+		case  2 :  watchingReservations();	
 		showMenu();
 		          break;
 		case 3 :  Housing h=addHousingInfo();
@@ -739,7 +741,7 @@ LOGGER.log(Level.INFO,"Done this update on location");
 	
 	
 
-	public static Boolean WatchingReservationstoOwner(String n) {
+	public static Boolean watchingReservationstoOwner(String n) {
 		boolean flag=false;
 		for(int i=0; i<housingListAccepted.size();i++) {
 		if(housingListAccepted.get(i).getOwnerName().equals(n)) {
@@ -787,7 +789,7 @@ LOGGER.log(Level.INFO,"Done this update on location");
 			LOGGER.log(Level.INFO,"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
 		 
 	 }
-	public static Boolean WatchingReservations() {
+	public static Boolean watchingReservations() {
 		boolean flag=false;
 		for(int i=0; i<housingListAccepted.size();i++) {			
 			showFromHousingListAccepted(i);  
@@ -857,7 +859,7 @@ flag=true;
     	
     }
     
-    public static boolean ShowHousingj(String usernamee) {
+    public static boolean showHousingj(String usernamee) {
     	boolean flag=false;
 		
 		 for(int i=0; i<housingList.size();i++) {
@@ -869,7 +871,7 @@ flag=true;
 		 return flag;
 			  }  
  
- public static boolean ShowHousingWithId(int id) {
+ public static boolean showHousingWithId(int id) {
 	   boolean flag=false;
 		
 		 for(int i=0; i<housingList.size();i++) {
@@ -1077,7 +1079,7 @@ return true;
 
 			LOGGER.log(Level.INFO,YOURCHOICE);
 			 userChoice = input3.nextInt();
-			AdminProcess(userChoice);
+			adminProcess(userChoice);
 		}
 		else if (getUserType().equals(OWNER)) {
 			LOGGER.log(Level.INFO,"\nChoose one :\n1)Add Housing .\n2)Your control panel. \n3) Modify housing.\n4)Show housing for accept ot reject  from admin. \n5)Show housing  acepted from admin.\n6)Close porogram.");

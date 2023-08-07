@@ -48,7 +48,7 @@ public void view_the_accepted_housing_for_you() {
 	
 	
 	boolean c=Main.acceptAndReject(1,h);
-	equals( true==Main.WatchingReservationstoOwner("ownerOmar"));
+	equals( true==Main.watchingReservationstoOwner("ownerOmar"));
 
 }
 
