@@ -240,7 +240,7 @@ public class modify {
 	@Then("The Status  changed")
 	public void the_status_changed() {
 		
-		Main.ShowHousingj("ownerOmar");
+		Main.showHousingj("ownerOmar");
 
 		
 		}
