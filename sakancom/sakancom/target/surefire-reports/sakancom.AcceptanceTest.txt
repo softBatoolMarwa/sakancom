@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: sakancom.AcceptanceTest
+-------------------------------------------------------------------------------
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.21 s - in sakancom.AcceptanceTest
