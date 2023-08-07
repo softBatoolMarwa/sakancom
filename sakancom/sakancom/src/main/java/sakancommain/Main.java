@@ -163,7 +163,7 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		
 		case 1 :
 			
-			ShowStatusOfHousing();	
+			showStatusOfHousing();	
 			
 		showMenu();
 				
@@ -224,7 +224,7 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		}
 		}	
 			
-	public static boolean ShowStatusOfHousing() { 
+	public static boolean showStatusOfHousing() { 
 		/**     house id : 556 ||||| Available 
 		   		house id : 557 ||||| Un_Available */
 		boolean flag=false;
@@ -572,86 +572,84 @@ LOGGER.log(Level.INFO,"Done this update on location");
     public static boolean editHousing(int number,int id,String usernamee) {
 
     	scanner2 = new Scanner(System.in);
-    	int newint;
-    	String newstr;
     	 for(int i=0; i<housingList.size();i++) {
 
     		 if(usernamee.equals(housingList.get(i).getOwnerName())&&(id == housingList.get(i).getHousingId())) {
     		 
 			    	 if(number==1) {
 			    		 LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-			    		 newint = scanner2.nextInt(); 
-					     editHousing2( number, id, newint );
+					     int resId = scanner2.nextInt(); 
+					     editHousing2( number, id, resId );
 			    	 
 			    	 }
 				 if(number==2) {
 					 LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-					 newstr = scanner2.next();
-					editHousing1( number, id, newstr );
+					String resNmae = scanner2.next();
+					editHousing1( number, id, resNmae );
 				
 				}
 				 if(number==3) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newstr = scanner2.next(); 
-				editHousing1( number, id, newstr );
+				String location = scanner2.next(); 
+				editHousing1( number, id, location );
 				}
 				 if(number==4) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newint = scanner2.nextInt();
-			     editHousing2( number, id, newint );
+			    int floorNum = scanner2.nextInt();
+			     editHousing2( number, id, floorNum );
 
 				}
 				 if(number==5) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newint = scanner2.nextInt();
-			     editHousing2( number, id, newint );
+				int apartmentNum = scanner2.nextInt();
+			     editHousing2( number, id, apartmentNum );
 
 				}
 				 if(number==6) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newstr = scanner2.next();
-				editHousing1( number, id, newstr );
+				String photo = scanner2.next();
+				editHousing1( number, id, photo );
 				}
 				 if(number==7) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newint = scanner2.nextInt();
-			     editHousing2( number, id, newint );
+				int rent = scanner2.nextInt();
+			     editHousing2( number, id, rent );
 
 }
 				 if(number==8) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newstr = scanner2.next();
-				editHousing1( number, id, newstr );
+				String services = scanner2.next();
+				editHousing1( number, id, services );
 
 
 				}
 				 if(number==9) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newint = scanner2.nextInt();
-			     editHousing2( number, id, newint );
+				int max = scanner2.nextInt();
+			     editHousing2( number, id, max );
 
 }
 				 if(number==10) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newint = scanner2.nextInt();
-			     editHousing2( number, id, newint );
+				int bed = scanner2.nextInt();
+			     editHousing2( number, id, bed );
 
 }
 				 if(number==11) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newint = scanner2.nextInt();
-			     editHousing2( number, id, newint );
+				int bath = scanner2.nextInt();
+			     editHousing2( number, id, bath );
 
 }
 				 if(number==12) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newint = scanner2.nextInt();
-			     editHousing2( number, id, newint );
+				 int balcony = scanner2.nextInt();
+			     editHousing2( number, id, balcony );
 
 }
 				 if(number==13) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newstr = scanner2.next();
-			editHousing1( number, id, newstr );
+			String	name = scanner2.next();
+			editHousing1( number, id, name );
 
 }
 				 if(number==14) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newstr = scanner2.next();
-				editHousing1( number, id, newstr );
+				String phone = scanner2.next();
+				editHousing1( number, id, phone );
 
 }
 				 if(number==15) {LOGGER.log(Level.INFO,ENTERVLAUWTOEDIT);
-				 newstr = scanner2.next();
-				editHousing1( number, id, newstr );
+				String email = scanner2.next();
+				editHousing1( number, id, email );
 
 }
 				 if(number==16) {

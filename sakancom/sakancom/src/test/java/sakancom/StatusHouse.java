@@ -16,7 +16,7 @@ public void admins_request_to_show_status_of_housing() {
 
 @Then("show the Status housing.")
 public void show_the_status_housing() {
-	equals( true==Main.ShowStatusOfHousing());
+	equals( true==Main.showStatusOfHousing());
 }
 
 }
