@@ -72,7 +72,7 @@ public static  Boolean isUserFound (String userName , String passWord) {
 		for (int i=0 ; i<tenantLinst.size() ; i++) {
 			
 			if (t.equals(tenantLinst.get(i).getname()) )  {
-				if (tenantLinst.get(i).getFurniture()!= "" ) {
+				if (!(tenantLinst.get(i).getFurniture().equals("") )) {
 					String neww=  tenantLinst.get(i).getFurniture()   ;
 					LOGGER.log(Level.INFO,"I have this used furniture for sale at good prices :\n" );
 					LOGGER.log(Level.INFO,neww );
