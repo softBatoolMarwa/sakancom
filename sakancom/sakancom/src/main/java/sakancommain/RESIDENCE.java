@@ -8,7 +8,7 @@ public class RESIDENCE {
 	private String location;
 	private Integer numOfFloors;
 	private Integer numOfApartments;
-	public Boolean flag = false;
+	private Boolean flag = false;
 	private String ownerId;
 	
 	

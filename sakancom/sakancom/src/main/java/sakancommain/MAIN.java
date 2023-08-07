@@ -26,13 +26,13 @@ public class MAIN {
     
     private static final String SPACE = "      ";
 
-    public  static ArrayList <RESIDENCE> residenceList = new ArrayList<RESIDENCE>();
-    public static ArrayList <TENANT> tenantLinst = new ArrayList<TENANT>();
-    public static ArrayList <HOUSEANDTENANT> houseAndTennantlist = new ArrayList<HOUSEANDTENANT>();
-    public static ArrayList <APARTMENT> apartmentList = new ArrayList<APARTMENT>();
-    public static ArrayList <USER> users = new ArrayList<USER>();
-    public static ArrayList <HOUSE> housingList = new ArrayList<HOUSE>();
-    public static ArrayList <HOUSE> housingListAccepted = new ArrayList<HOUSE>();
+    public  static final ArrayList <RESIDENCE> residenceList = new ArrayList<RESIDENCE>();
+    public static  final ArrayList <TENANT> tenantLinst = new ArrayList<TENANT>();
+    public static final  ArrayList <HOUSEANDTENANT> houseAndTennantlist = new ArrayList<HOUSEANDTENANT>();
+    public static final ArrayList <APARTMENT> apartmentList = new ArrayList<APARTMENT>();
+    public static final ArrayList <USER> users = new ArrayList<USER>();
+    public static final ArrayList <HOUSE> housingList = new ArrayList<HOUSE>();
+    public static final ArrayList <HOUSE> housingListAccepted = new ArrayList<HOUSE>();
 
 	private static  Scanner input1;
 	private static String userType = "none" ;
@@ -50,21 +50,21 @@ public class MAIN {
 	}
 public static  Boolean isUserFound (String userName , String passWord) {
 		
-		boolean user_found = false;
+		boolean userFound = false;
 		for (USER user : users) {
 			
 			if ((user.getUserName().equals(userName))&&(user.getPass().equals(passWord))) {
-				user_found = true;
+				userFound = true;
 				break;
 			}
 			
 			else {
-				user_found = false;
+				userFound = false;
 			}
 		
 		}
 		
-		return user_found;
+		return userFound;
 	} 
 	
 	public static boolean showUsedFurniture(String t) {
@@ -102,7 +102,7 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 		
 	
 	public static boolean tenantCpanel(String usernamee) {
-		int IdHouse = 0;
+		int idHouse = 0;
 		
 		boolean a = false;
 		for (int i=0 ; i<tenantLinst.size() ; i++) {
@@ -126,11 +126,11 @@ public static boolean addUsedFurniture(String Furniture,String user) {
 			for (int j=0 ; j<houseAndTennantlist.size() ; j++) {
 				if(usernamee.equals(houseAndTennantlist.get(j).getTenants())) {
 					LOGGER.log(Level.INFO,"The apartment number booked in your name is : {0}  ",houseAndTennantlist.get(j).gethousingId() );
-					IdHouse=houseAndTennantlist.get(j).gethousingId();
+					idHouse=houseAndTennantlist.get(j).gethousingId();
 				
 					
 					for (int jj=0 ; jj<housingListAccepted.size() ; jj++) {
-						if(IdHouse==housingListAccepted.get(jj).getHousingId()) {
+						if(idHouse==housingListAccepted.get(jj).getHousingId()) {
 							LOGGER.log(Level.INFO,"The owner Name is   : ");
 							LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerName() );
 							LOGGER.log(Level.INFO,"The owner Phone is  : ");
