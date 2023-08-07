@@ -17,7 +17,7 @@ public class reservation_admin {
 	@Then("View the reservations id house and name tenent")
 	public void view_the_reservations_id_house_and_name_tenent() {
 		HOUSEANDTENANT h = new HOUSEANDTENANT(11,"bed");
-		MAIN.houseAndTennantlist.add(h);
+		MAIN.getHouseandtennantlist().add(h);
 		equals( true==MAIN.showTenantToAdmin() );
 
 	}

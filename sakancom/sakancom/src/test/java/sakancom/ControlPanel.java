@@ -17,8 +17,8 @@ public void owner_request_control_panel() {
 public void it_will_show_what_buildings_this_owner_owns_the_number_of_floors_in_each_building_and_the_number_of_apartments_on_each_floor() {
 	RESIDENCE firstResidence = new RESIDENCE(1 , "alsafa" , "nablus" , 3 , 10,"ownerOmar");
 	RESIDENCE secondResidence = new RESIDENCE(5 , "istanbul" , "nablus" , 3 , 21,"ownerAseel");
-	MAIN.residenceList.add(firstResidence);
-	MAIN.residenceList.add(secondResidence);
+	MAIN.getResidencelist().add(firstResidence);
+	MAIN.getResidencelist().add(secondResidence);
 	
 	APARTMENT apa = new APARTMENT();
 	apa.setId(1);
@@ -34,7 +34,7 @@ public void it_will_show_what_buildings_this_owner_owns_the_number_of_floors_in_
 	apa.setBalcony(1);
 	apa.setAvailable(true);
 	APARTMENT secondApartment32 = new APARTMENT(apa);
-	MAIN.apartmentList.add(secondApartment32);
+	MAIN.getApartmentlist().add(secondApartment32);
 	
 	
 

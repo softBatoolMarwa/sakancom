@@ -26,13 +26,13 @@ public class MAIN {
     
     private static final String SPACE = "      ";
 
-    public  static final ArrayList <RESIDENCE> residenceList = new ArrayList<RESIDENCE>();
-    public static  final ArrayList <TENANT> tenantLinst = new ArrayList<TENANT>();
-    public static final  ArrayList <HOUSEANDTENANT> houseAndTennantlist = new ArrayList<HOUSEANDTENANT>();
-    public static final ArrayList <APARTMENT> apartmentList = new ArrayList<APARTMENT>();
-    public static final ArrayList <USER> users = new ArrayList<USER>();
-    public static final ArrayList <HOUSE> housingList = new ArrayList<HOUSE>();
-    public static final ArrayList <HOUSE> housingListAccepted = new ArrayList<HOUSE>();
+    private static final ArrayList <RESIDENCE> residenceList = new ArrayList<RESIDENCE>();
+    private static  final ArrayList <TENANT> tenantLinst = new ArrayList<TENANT>();
+    private static final  ArrayList <HOUSEANDTENANT> houseAndTennantlist = new ArrayList<HOUSEANDTENANT>();
+    private static final ArrayList <APARTMENT> apartmentList = new ArrayList<APARTMENT>();
+    protected static final ArrayList <USER> users = new ArrayList<USER>();
+    protected static final ArrayList <HOUSE> housingList = new ArrayList<HOUSE>();
+    protected static final ArrayList <HOUSE> housingListAccepted = new ArrayList<HOUSE>();
 
 	private static  Scanner input1;
 	private static String userType = "none" ;
@@ -69,11 +69,11 @@ public static  Boolean isUserFound (String userName , String passWord) {
 	
 	public static boolean showUsedFurniture(String t) {
 		boolean returnn = false;
-		for (int i=0 ; i<tenantLinst.size() ; i++) {
+		for (int i=0 ; i<getTenantlinst().size() ; i++) {
 			
-			if (t.equals(tenantLinst.get(i).getname()) )  {
-				if (!(tenantLinst.get(i).getFurniture().equals("") )) {
-					String neww=  tenantLinst.get(i).getFurniture()   ;
+			if (t.equals(getTenantlinst().get(i).getname()) )  {
+				if (!(getTenantlinst().get(i).getFurniture().equals("") )) {
+					String neww=  getTenantlinst().get(i).getFurniture()   ;
 					LOGGER.log(Level.INFO,"I have this used furniture for sale at good prices :\n" );
 					LOGGER.log(Level.INFO,neww );
 
@@ -90,10 +90,10 @@ public static  Boolean isUserFound (String userName , String passWord) {
 	
 public static boolean addUsedFurniture(String furniture,String user) {
 	boolean flag=false;
-		for (int i=0 ; i<tenantLinst.size() ; i++) {
+		for (int i=0 ; i<getTenantlinst().size() ; i++) {
 			
-			if (user.equals(tenantLinst.get(i).getname()) )  {
-				tenantLinst.get(i).setFurniture(furniture);
+			if (user.equals(getTenantlinst().get(i).getname()) )  {
+				getTenantlinst().get(i).setFurniture(furniture);
 			flag=true;	
 			}
 							}
@@ -105,28 +105,28 @@ public static boolean addUsedFurniture(String furniture,String user) {
 		int idHouse = 0;
 		
 		boolean a = false;
-		for (int i=0 ; i<tenantLinst.size() ; i++) {
-		if(tenantLinst.get(i).getname().equals(usernamee)) {
+		for (int i=0 ; i<getTenantlinst().size() ; i++) {
+		if(getTenantlinst().get(i).getname().equals(usernamee)) {
 			a=true;
 			LOGGER.log(Level.INFO,"your name : ");
-			LOGGER.log(Level.INFO,tenantLinst.get(i).getname() );
+			LOGGER.log(Level.INFO,getTenantlinst().get(i).getname() );
 			
 			
 			LOGGER.log(Level.INFO,"your phone : ");
-			LOGGER.log(Level.INFO,tenantLinst.get(i).getphone() );
+			LOGGER.log(Level.INFO,getTenantlinst().get(i).getphone() );
 			
-			LOGGER.log(Level.INFO,"your age :  {0} ",tenantLinst.get(i).getage());
+			LOGGER.log(Level.INFO,"your age :  {0} ",getTenantlinst().get(i).getage());
 			
 			LOGGER.log(Level.INFO,"your majer : ");
-			LOGGER.log(Level.INFO,tenantLinst.get(i).getmajer() );
+			LOGGER.log(Level.INFO,getTenantlinst().get(i).getmajer() );
 			
 			LOGGER.log(Level.INFO,"your furniture : ");
-			LOGGER.log(Level.INFO,tenantLinst.get(i).getFurniture() );
+			LOGGER.log(Level.INFO,getTenantlinst().get(i).getFurniture() );
 			
-			for (int j=0 ; j<houseAndTennantlist.size() ; j++) {
-				if(usernamee.equals(houseAndTennantlist.get(j).getTenants())) {
-					LOGGER.log(Level.INFO,"The apartment number booked in your name is : {0}  ",houseAndTennantlist.get(j).gethousingId() );
-					idHouse=houseAndTennantlist.get(j).gethousingId();
+			for (int j=0 ; j<getHouseandtennantlist().size() ; j++) {
+				if(usernamee.equals(getHouseandtennantlist().get(j).getTenants())) {
+					LOGGER.log(Level.INFO,"The apartment number booked in your name is : {0}  ",getHouseandtennantlist().get(j).gethousingId() );
+					idHouse=getHouseandtennantlist().get(j).gethousingId();
 				
 					
 					for (int jj=0 ; jj<housingListAccepted.size() ; jj++) {
@@ -258,7 +258,7 @@ public static boolean addUsedFurniture(String furniture,String user) {
 					  c=c+1;
 					  h=true;
 					  HOUSEANDTENANT t1 = new HOUSEANDTENANT(housingId,username);
-					  houseAndTennantlist.add(t1);
+					  getHouseandtennantlist().add(t1);
 						
 					  LOGGER.log(Level.INFO,"The apartment has been booked");
 
@@ -410,7 +410,7 @@ return h;	}
 	apa.setBalcony(balcony);
 	apa.setAvailable(true);
 	APARTMENT secondApartment32 = new APARTMENT(apa);
-	apartmentList.add(secondApartment32);
+	getApartmentlist().add(secondApartment32);
 		
 		return h;
 		
@@ -725,10 +725,10 @@ LOGGER.log(Level.INFO,"Done this update on location");
 	
 	public static Boolean showTenantToAdmin() {
 		boolean flag=false;
-		for(int i=0 ; i<houseAndTennantlist.size();i++) {
-			LOGGER.log(Level.INFO,"house id : {0}",houseAndTennantlist.get(i).gethousingId());
+		for(int i=0 ; i<getHouseandtennantlist().size();i++) {
+			LOGGER.log(Level.INFO,"house id : {0}",getHouseandtennantlist().get(i).gethousingId());
 		 	LOGGER.log(Level.INFO,"|| have this ||");
-		 	LOGGER.log(Level.INFO,houseAndTennantlist.get(i).getTenants());
+		 	LOGGER.log(Level.INFO,getHouseandtennantlist().get(i).getTenants());
 
 
 			flag=true;
@@ -883,15 +883,15 @@ flag=true;
 			  }
   
    public static void printInfoForCpanelOwner(int j,int m) {
-	   LOGGER.log(Level.INFO,"Aapartment Id : {0}    ",apartmentList.get(j).getId());
-	   LOGGER.log(Level.INFO,"number of balcony :{0}   ",apartmentList.get(j).getBalcony());
-		LOGGER.log(Level.INFO,"number of bedrooms :{0}    ",apartmentList.get(j).getBedrooms());
-				LOGGER.log(Level.INFO,"number of bathrooms :{0}     ",apartmentList.get(j).getBathrooms());
+	   LOGGER.log(Level.INFO,"Aapartment Id : {0}    ",getApartmentlist().get(j).getId());
+	   LOGGER.log(Level.INFO,"number of balcony :{0}   ",getApartmentlist().get(j).getBalcony());
+		LOGGER.log(Level.INFO,"number of bedrooms :{0}    ",getApartmentlist().get(j).getBedrooms());
+				LOGGER.log(Level.INFO,"number of bathrooms :{0}     ",getApartmentlist().get(j).getBathrooms());
 				
 				
 				
-				String res = Integer.toString(residenceList.get(m).getId());
-				String apa = Integer.toString(apartmentList.get(j).getId());
+				String res = Integer.toString(getResidencelist().get(m).getId());
+				String apa = Integer.toString(getApartmentlist().get(j).getId());
 				String result = res + apa ;
 				int housingId = Integer.parseInt(result);
 				  
@@ -901,17 +901,17 @@ flag=true;
 			
 		
 		
-		for(int jj=0; jj<houseAndTennantlist.size();jj++) {
-			if(	housingId == houseAndTennantlist.get(jj).gethousingId()) {
+		for(int jj=0; jj<getHouseandtennantlist().size();jj++) {
+			if(	housingId == getHouseandtennantlist().get(jj).gethousingId()) {
  				LOGGER.log(Level.INFO,"\nTenant Name :");
- 				LOGGER.log(Level.INFO,houseAndTennantlist.get(jj).getTenants());
+ 				LOGGER.log(Level.INFO,getHouseandtennantlist().get(jj).getTenants());
  				LOGGER.log(Level.INFO,SPACE);
 
 				
-				for(int jjj=0; jjj<tenantLinst.size();jjj++) {
-					if(	tenantLinst.get(jjj).getname().equals(houseAndTennantlist.get(jj).getTenants())) {
+				for(int jjj=0; jjj<getTenantlinst().size();jjj++) {
+					if(	getTenantlinst().get(jjj).getname().equals(getHouseandtennantlist().get(jj).getTenants())) {
 		 				LOGGER.log(Level.INFO,"Tenant phone :");
-		 				LOGGER.log(Level.INFO,tenantLinst.get(jjj).getphone());
+		 				LOGGER.log(Level.INFO,getTenantlinst().get(jjj).getphone());
 		 				LOGGER.log(Level.INFO,SPACE);
 
 
@@ -924,28 +924,28 @@ flag=true;
     	LOGGER.log(Level.INFO,"Welcome in Conrtol Panel ");
     	LOGGER.log(Level.INFO,userName);
 
-			for (int m =0 ; m<residenceList.size();m++) {
-				if(residenceList.get(m).getOwnerId().equals(userName)) {
+			for (int m =0 ; m<getResidencelist().size();m++) {
+				if(getResidencelist().get(m).getOwnerId().equals(userName)) {
 					flag=true;
-	 				LOGGER.log(Level.INFO,"\n||||||||||||||||||||||||||||||||||||||||||\nId for your residence is : {0}", residenceList.get(m).getId());
+	 				LOGGER.log(Level.INFO,"\n||||||||||||||||||||||||||||||||||||||||||\nId for your residence is : {0}", getResidencelist().get(m).getId());
 
-	 				LOGGER.log(Level.INFO,"Number Of Floor is : {0}", residenceList.get(m).getNumOfFloors());
-	 				for(int j=0; j<apartmentList.size();j++) {
-						if(apartmentList.get(j).getResidenceId() == residenceList.get(m).getId() ) {
-								if(	apartmentList.get(j).getFloorNum() ==1 ) {
+	 				LOGGER.log(Level.INFO,"Number Of Floor is : {0}", getResidencelist().get(m).getNumOfFloors());
+	 				for(int j=0; j<getApartmentlist().size();j++) {
+						if(getApartmentlist().get(j).getResidenceId() == getResidencelist().get(m).getId() ) {
+								if(	getApartmentlist().get(j).getFloorNum() ==1 ) {
 					 				LOGGER.log(Level.INFO,"\nThe (first) floor have this apartment : ");
 
 								printInfoForCpanelOwner(j,m);
 								flag=true;
 								}
-							if(	apartmentList.get(j).getFloorNum() ==2 ) {
+							if(	getApartmentlist().get(j).getFloorNum() ==2 ) {
 					 				LOGGER.log(Level.INFO,"\nThe (secend) floor have this apartment : ");
 
 									printInfoForCpanelOwner(j,m);
 									flag=true;
 									}
 								
-								if(	apartmentList.get(j).getFloorNum() ==3 ) {
+								if(	getApartmentlist().get(j).getFloorNum() ==3 ) {
 					 				LOGGER.log(Level.INFO,"\nThe (Third) floor have this apartment : ");
 
 									printInfoForCpanelOwner(j,m);
@@ -960,23 +960,23 @@ flag=true;
     
     public static boolean ifTenIsStudent(String name) {
     	boolean flag=false;
-    	for(int ii =0 ; ii<tenantLinst.size();ii++) {
-    		if(tenantLinst.get(ii).getname().equals(name) && tenantLinst.get(ii).getIsStudent().equals("yes")) {
+    	for(int ii =0 ; ii<getTenantlinst().size();ii++) {
+    		if(getTenantlinst().get(ii).getname().equals(name) && getTenantlinst().get(ii).getIsStudent().equals("yes")) {
     		
     
      
-        	for(int i =0 ; i<tenantLinst.size();i++) {
-        		if(tenantLinst.get(i).getIsStudent().equals("yes") &&(!(tenantLinst.get(i).getname().equals(name)))) {
+        	for(int i =0 ; i<getTenantlinst().size();i++) {
+        		if(getTenantlinst().get(i).getIsStudent().equals("yes") &&(!(getTenantlinst().get(i).getname().equals(name)))) {
         			 				LOGGER.log(Level.INFO,"*********Student Neighbors Information:*********");
  				LOGGER.log(Level.INFO,"Student Name:");
- 				LOGGER.log(Level.INFO,tenantLinst.get(i).getname());
+ 				LOGGER.log(Level.INFO,getTenantlinst().get(i).getname());
 
  				LOGGER.log(Level.INFO,"Student phone:");
- 				LOGGER.log(Level.INFO,tenantLinst.get(i).getname());
+ 				LOGGER.log(Level.INFO,getTenantlinst().get(i).getname());
 
- 				LOGGER.log(Level.INFO,"Student age:{0}",tenantLinst.get(i).getage());
+ 				LOGGER.log(Level.INFO,"Student age:{0}",getTenantlinst().get(i).getage());
  				LOGGER.log(Level.INFO,"Student majer:");
- 				LOGGER.log(Level.INFO,tenantLinst.get(i).getname());
+ 				LOGGER.log(Level.INFO,getTenantlinst().get(i).getname());
 
 
  				
@@ -998,18 +998,18 @@ flag=true;
 		TENANT t2 = new TENANT("tenantNajeh44","05888888",30,"Doctor","no");
 		TENANT t3 = new TENANT("tenantNajeh43","05777777",21," MIS","yes");
 		TENANT t4 = new TENANT("tenantNajeh42","05666666",20,"Civil Engineering","yes");
-		tenantLinst.add(t1);
+		getTenantlinst().add(t1);
 
-		tenantLinst.add(t2);
+		getTenantlinst().add(t2);
 
-		tenantLinst.add(t3);
+		getTenantlinst().add(t3);
 
-		tenantLinst.add(t4);
+		getTenantlinst().add(t4);
 
 		RESIDENCE firstResidence = new RESIDENCE(1 , "alsafa" , "nablus" , 3 , 10,"ownerOmar");
 		RESIDENCE secondResidence = new RESIDENCE(5 , "istanbul" , "nablus" , 3 , 21,"ownerAseel");
-		residenceList.add(firstResidence);
-		residenceList.add(secondResidence);
+		getResidencelist().add(firstResidence);
+		getResidencelist().add(secondResidence);
 
 return true;
     }
@@ -1146,6 +1146,18 @@ return true;
 		
 		
 		
+	}
+	public static ArrayList <RESIDENCE> getResidencelist() {
+		return residenceList;
+	}
+	public static ArrayList <APARTMENT> getApartmentlist() {
+		return apartmentList;
+	}
+	public static ArrayList <TENANT> getTenantlinst() {
+		return tenantLinst;
+	}
+	public static ArrayList <HOUSEANDTENANT> getHouseandtennantlist() {
+		return houseAndTennantlist;
 	}
 
 }

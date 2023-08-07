@@ -21,13 +21,13 @@ public void the_furniture_will_appear() {
 	TENANT t2 = new TENANT("tenantNajeh44","05888888",30,"Doctor","no");
 	TENANT t3 = new TENANT("tenantNajeh43","05777777",21," MIS","yes");
 	TENANT t4 = new TENANT("tenantNajeh42","05666666",20,"Civil Engineering","yes");
-	MAIN.tenantLinst.add(t1);
+	MAIN.getTenantlinst().add(t1);
 
-	MAIN.tenantLinst.add(t2);
+	MAIN.getTenantlinst().add(t2);
 
-	MAIN.tenantLinst.add(t3);
+	MAIN.getTenantlinst().add(t3);
 
-	MAIN.tenantLinst.add(t4);
+	MAIN.getTenantlinst().add(t4);
 	MAIN.addUsedFurniture("bed 100","tenantNajeh45");
 
 	equals( true==MAIN.showUsedFurniture("tenantNajeh45") );
