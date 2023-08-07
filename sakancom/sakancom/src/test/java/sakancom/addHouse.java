@@ -40,7 +40,7 @@ public void the_house_added_to_housing_array_to_go_into_admin() {
 	
 	
 	boolean c= Main.addHousing(h,"owner");
-	Main.showHousingj("ownerOmar");	
+	Main.ShowHousingj("ownerOmar");	
 	equals( true==c );
 
 
@@ -120,7 +120,7 @@ public void the_house_added_admin() {
 	
 	
 	boolean c= Main.addHousing(h,"admin");
-	Main.showHousingj("ownerOmar");	
+	Main.ShowHousingj("ownerOmar");	
 	equals( true==c );
 
 }

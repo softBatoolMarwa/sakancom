@@ -15,7 +15,7 @@ public class avalibleHouses {
 
 	@Then("show the available housing.")
 	public void show_the_available_housing() {
-		equals( true==Main.watchingReservations());
+		equals( true==Main.WatchingReservations());
 
 	}
 }
