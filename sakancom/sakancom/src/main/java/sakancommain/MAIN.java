@@ -37,7 +37,7 @@ public class MAIN {
 	private static  Scanner input1;
 	private static String userType = "none" ;
 	static String username;
-	static Boolean housing_not_found = false; 
+	static Boolean housingNotFound = false; 
 	static Boolean accept = false; 
 
 
@@ -427,13 +427,13 @@ return h;	}
 				}
 				if (flag ==0 ) {housingListAccepted.add(h);
 				LOGGER.log(Level.INFO,"your housing has been added successfully");
-				housing_not_found= true;
-				return	housing_not_found;
+				housingNotFound= true;
+				return	housingNotFound;
 				}
 				else {
 					LOGGER.log(Level.INFO,"this housing is already exist");
-					housing_not_found = false;
-					return housing_not_found ;
+					housingNotFound = false;
+					return housingNotFound ;
 					
 				   
 				}
@@ -449,19 +449,19 @@ return h;	}
 			}
 			if (flag ==0 ) {housingList.add(h);
 			LOGGER.log(Level.INFO,"your housing has been added successfully");
-			housing_not_found= true;
-			return	housing_not_found;
+			housingNotFound= true;
+			return	housingNotFound;
 			}
 			else {
 				LOGGER.log(Level.INFO,"this housing is already exist");
-				housing_not_found = false;
-				return housing_not_found ;
+				housingNotFound = false;
+				return housingNotFound ;
 				
 			   
 			}}
 		else {
-			housing_not_found = false;
-			return housing_not_found ;}
+			housingNotFound = false;
+			return housingNotFound ;}
 			
 			
 	
