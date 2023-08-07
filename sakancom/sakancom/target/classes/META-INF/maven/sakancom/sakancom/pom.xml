@@ -29,25 +29,14 @@
 
 	
 </dependencies>
+
+  
+ <properties>
+  <sonar.organization>softbatoolmarwa</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties> 
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
 </project>
