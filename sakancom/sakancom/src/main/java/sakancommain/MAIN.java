@@ -88,12 +88,12 @@ public static  Boolean isUserFound (String userName , String passWord) {
 		
 		return returnn;}
 	
-public static boolean addUsedFurniture(String Furniture,String user) {
+public static boolean addUsedFurniture(String furniture,String user) {
 	boolean flag=false;
 		for (int i=0 ; i<tenantLinst.size() ; i++) {
 			
 			if (user.equals(tenantLinst.get(i).getname()) )  {
-				tenantLinst.get(i).setFurniture(Furniture);
+				tenantLinst.get(i).setFurniture(furniture);
 			flag=true;	
 			}
 							}
