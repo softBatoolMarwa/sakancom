@@ -2,8 +2,8 @@ package sakancom;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import sakancomMain.Housing;
-import sakancomMain.Main;
+import sakancommain.Housing;
+import sakancommain.Main;
 
 public class WatchingReservationstoOwner {
 
