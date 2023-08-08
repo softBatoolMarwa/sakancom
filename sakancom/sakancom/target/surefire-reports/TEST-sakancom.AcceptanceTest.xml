@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="sakancom.AcceptanceTest" time="1.15" tests="47" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="sakancom.AcceptanceTest" time="1.17" tests="47" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\jomaa\AppData\Local\Temp\surefire13146969591258059283\surefirebooter-20230808095719651_3.jar C:\Users\jomaa\AppData\Local\Temp\surefire13146969591258059283 2023-08-08T09-57-19_549-jvmRun1 surefire-20230808095719651_1tmp surefire_0-20230808095719651_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\jomaa\AppData\Local\Temp\surefire10001151989565381215\surefirebooter-20230808104817202_3.jar C:\Users\jomaa\AppData\Local\Temp\surefire10001151989565381215 2023-08-08T10-48-17_100-jvmRun1 surefire-20230808104817202_1tmp surefire_0-20230808104817202_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\jomaa\Downloads\sakancom\sakancom\target\test-classes;C:\Users\jomaa\Downloads\sakancom\sakancom\target\classes;C:\Users\jomaa\.m2\repository\io\cucumber\cucumber-picocontainer\7.3.4\cucumber-picocontainer-7.3.4.jar;C:\Users\jomaa\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jomaa\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\jomaa\.m2\repository\io\cucumber\cucumber-java\7.3.4\cucumber-java-7.3.4.jar;C:\Users\jomaa\.m2\repository\io\cucumber\cucumber-core\7.3.4\cucumber-core-7.3.4.jar;C:\Users\jomaa\.m2\repository\io\cucumber\cucumber-gherkin\7.3.4\cucumber-gherkin-7.3.4.jar;C:\Users\jomaa\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.3.4\cucumber-gherkin-messages-7.3.4.jar;C:\Users\jomaa\.m2\repository\io\cucumber\gherkin\23.0.1\gherkin-23.0.1.jar;C:\Users\jomaa\.m2\repository\io\cucumber\messages\18.0.0\messages-18.0.0.jar;C:\Users\jomaa\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\jomaa\.m2\repository\io\cucumber\cucumber-expressions\15.1.1\cucumber-expressions-15.1.1.jar;C:\Users\jomaa\.m2\repository\io\cucumber\datatable\7.3.4\datatable-7.3.4.jar;C:\Users\jomaa\.m2\repository\io\cucumber\cucumber-plugin\7.3.4\cucumber-plugin-7.3.4.jar;C:\Users\jomaa\.m2\repository\io\cucumber\docstring\7.3.4\docstring-7.3.4.jar;C:\Users\jomaa\.m2\repository\io\cucumber\html-formatter\19.1.0\html-formatter-19.1.0.jar;C:\Users\jomaa\.m2\repository\io\cucumber\ci-environment\9.0.4\ci-environment-9.0.4.jar;C:\Users\jomaa\.m2\repository\io\cucumber\cucumber-junit\7.3.4\cucumber-junit-7.3.4.jar;C:\Users\jomaa\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\jomaa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jomaa\AppData\Local\Temp\surefire13146969591258059283\surefirebooter-20230808095719651_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jomaa\AppData\Local\Temp\surefire10001151989565381215\surefirebooter-20230808104817202_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.1+10-21"/>
@@ -59,1184 +59,1184 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="when admins request to reservations via the system" classname="Watching reservations via the system" time="0.142">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN showTenantToAdmin
+  <testcase name="when admins request to reservations via the system" classname="Watching reservations via the system" time="0.184">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN showTenantToAdmin
 INFO: house id : 11
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showTenantToAdmin
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showTenantToAdmin
 INFO: || have this ||
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showTenantToAdmin
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showTenantToAdmin
 INFO: bed
 ]]></system-err>
   </testcase>
-  <testcase name="when  (acceptance)admins request to see advertisement of housing ." classname="Scenes of requests for advertisement of housing and the ability to accept and reject it." time="0.014"/>
-  <testcase name="when (reject)admins request to see advertisement of housing ." classname="Scenes of requests for advertisement of housing and the ability to accept and reject it." time="0.014"/>
-  <testcase name="when owner request to add housing. #1" classname="add housing #1" time="0.023">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN addHousing
+  <testcase name="when  (acceptance)admins request to see advertisement of housing ." classname="Scenes of requests for advertisement of housing and the ability to accept and reject it." time="0"/>
+  <testcase name="when (reject)admins request to see advertisement of housing ." classname="Scenes of requests for advertisement of housing and the ability to accept and reject it." time="0"/>
+  <testcase name="when owner request to add housing. #1" classname="add housing #1" time="0.008">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN addHousing
 INFO: your housing has been added successfully
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 House Id:  2,200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Residence Id:   2
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: alsafa
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 House location:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: nablus
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Apartment Number: 200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: elevator
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: ownerOmar11
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 0569696345
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingList
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingList
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ]]></system-err>
   </testcase>
-  <testcase name="when owner request to add housing. #2" classname="add housing #1" time="0.059">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN addHousing
+  <testcase name="when owner request to add housing. #2" classname="add housing #1" time="0.01">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN addHousing
 INFO: this housing is already exist
 ]]></system-err>
   </testcase>
-  <testcase name="when admin add housing.(admin)" classname="add housing #1" time="0.001">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN addHousing
+  <testcase name="when admin add housing.(admin)" classname="add housing #1" time="0.011">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN addHousing
 INFO: this housing is already exist
 ]]></system-err>
   </testcase>
-  <testcase name="when admin request to add housing.(admin)2" classname="add housing #1" time="0.001">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN addHousing
+  <testcase name="when admin request to add housing.(admin)2" classname="add housing #1" time="0.02">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN addHousing
 INFO: your housing has been added successfully
 ]]></system-err>
   </testcase>
-  <testcase name="when admins request to see the accepted housing." classname="View the accepted housing" time="0.006">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+  <testcase name="when admins request to see the accepted housing." classname="View the accepted housing" time="0.028">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Id:  2,200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Id:   2
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: alsafa
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House location:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: nablus
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Apartment Number: 200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: elevator
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ownerOmar11
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 0569696345
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Id:  7,200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Id:   7
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: alsafa
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House location:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: nablus
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Apartment Number: 200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: elevator
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ownerOmar
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 0569696345
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Id:  222,002 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Id:   22
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: alsafa
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House location:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: nablus
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Apartment Number: 2,002 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: elevator
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ownerOmar11
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 0569696345
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ]]></system-err>
   </testcase>
-  <testcase name="when owner request to see your accepted housing." classname="View the accepted housing to owner" time="0.02">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+  <testcase name="when owner request to see your accepted housing." classname="View the accepted housing to owner" time="0.015">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Id:  7,200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Id:   7
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: alsafa
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House location:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: nablus
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Apartment Number: 200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: elevator
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ownerOmar
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 0569696345
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Id:  2,200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Id:   2
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: alsafa
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House location:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: nablus
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Apartment Number: 200 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: elevator
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ownerOmar
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 0569696345
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ]]></system-err>
   </testcase>
-  <testcase name="when owner request Control Panel." classname="Control Panel" time="0.013">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN cPanel
+  <testcase name="when owner request Control Panel." classname="Control Panel" time="0.016">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN cPanel
 INFO: Welcome in Conrtol Panel 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN cPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN cPanel
 INFO: ownerOmar
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN cPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN cPanel
 INFO: 
 ||||||||||||||||||||||||||||||||||||||||||
 Id for your residence is : 1
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN cPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN cPanel
 INFO: Number Of Floor is : 3
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN cPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN cPanel
 INFO: 
 The (first) floor have this apartment : 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN printInfoForCpanelOwner
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN printInfoForCpanelOwner
 INFO: Aapartment Id : 1    
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN printInfoForCpanelOwner
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN printInfoForCpanelOwner
 INFO: number of balcony :1   
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN printInfoForCpanelOwner
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN printInfoForCpanelOwner
 INFO: number of bedrooms :2    
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN printInfoForCpanelOwner
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN printInfoForCpanelOwner
 INFO: number of bathrooms :2     
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN printInfoForCpanelOwner
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN printInfoForCpanelOwner
 INFO: House Id  :11  
 
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN printInfoForCpanelOwner
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN printInfoForCpanelOwner
 INFO: 
 Tenant Name :
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN printInfoForCpanelOwner
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN printInfoForCpanelOwner
 INFO: bed
-Aug 08, 2023 9:57:20 AM sakancommain.MAIN printInfoForCpanelOwner
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN printInfoForCpanelOwner
 INFO:       
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Residence Id)" classname="modify housing" time="0.009">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing2
+  <testcase name="when owner modify housing.(Residence Id)" classname="modify housing" time="0.012">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing2
 INFO: Done this update ResidenceId
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Residence Name)" classname="modify housing" time="0.01">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing1
+  <testcase name="when owner modify housing.(Residence Name)" classname="modify housing" time="0.028">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing1
 INFO: Done this update on ResidenceName
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Location )" classname="modify housing" time="0.009">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing1
+  <testcase name="when owner modify housing.(Location )" classname="modify housing" time="0.008">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing1
 INFO: Done this update on location
 ]]></system-err>
   </testcase>
   <testcase name="when owner modify housing.(Floor Number )" classname="modify housing" time="0.008">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing2
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing2
 INFO: Done this update FloorNum
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Apartment Number )" classname="modify housing" time="0.008">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing2
+  <testcase name="when owner modify housing.(Apartment Number )" classname="modify housing" time="0.007">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing2
 INFO: Done this update ApartmentNum
 ]]></system-err>
   </testcase>
   <testcase name="when owner modify housing.(Photo )" classname="modify housing" time="0.008">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing1
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing1
 INFO: Done this update on Photo
 ]]></system-err>
   </testcase>
   <testcase name="when owner modify housing.(Rent )" classname="modify housing" time="0.008">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing2
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing2
 INFO: Done this update Rent
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Services )" classname="modify housing" time="0.011">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing1
+  <testcase name="when owner modify housing.(Services )" classname="modify housing" time="0.009">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing1
 INFO: Done this update on Services
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Max Number Of Tenant )" classname="modify housing" time="0.007">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing2
+  <testcase name="when owner modify housing.(Max Number Of Tenant )" classname="modify housing" time="0.008">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing2
 INFO: Done this update MaxNumOfTenant
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Number Of Bedrooms )" classname="modify housing" time="0.009">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing2
+  <testcase name="when owner modify housing.(Number Of Bedrooms )" classname="modify housing" time="0.008">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing2
 INFO: Done this update NumOfBedrooms
 ]]></system-err>
   </testcase>
   <testcase name="when owner modify housing.(Number Of Bathrooms )" classname="modify housing" time="0.008">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing2
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing2
 INFO: Done this update NumOfBathrooms
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Balcony )" classname="modify housing" time="0.007">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing2
+  <testcase name="when owner modify housing.(Balcony )" classname="modify housing" time="0.008">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing2
 INFO: Done this update Balcony
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Owner Name )" classname="modify housing" time="0.008">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing1
+  <testcase name="when owner modify housing.(Owner Name )" classname="modify housing" time="0.007">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing1
 INFO: Done this update on OwnerName
 ]]></system-err>
   </testcase>
-  <testcase name="when owner modify housing.(Owner Phone )" classname="modify housing" time="0.008">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing1
+  <testcase name="when owner modify housing.(Owner Phone )" classname="modify housing" time="0.007">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing1
 INFO: Done this update on OwnerPhone
 ]]></system-err>
   </testcase>
   <testcase name="when owner modify housing.(Owner Email )" classname="modify housing" time="0.005"/>
-  <testcase name="when owner modify housing.(Residence )" classname="modify housing" time="0.006">
-    <system-err><![CDATA[Aug 08, 2023 9:57:20 AM sakancommain.MAIN editHousing1
+  <testcase name="when owner modify housing.(Residence )" classname="modify housing" time="0.009">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN editHousing1
 INFO: Done this update on OwnerEmail
 ]]></system-err>
   </testcase>
   <testcase name="when owner modify housing.(Status )" classname="modify housing" time="0.006"/>
   <testcase name="owner True-&gt; uname and True-&gt; password" classname="Login" time="0.007"/>
   <testcase name="owner True-&gt; uname and False-&gt; password" classname="Login" time="0.007"/>
-  <testcase name="owner False-&gt; uname" classname="Login" time="0.006"/>
-  <testcase name="admin True-&gt; uname and True-&gt; password" classname="Login" time="0.006"/>
-  <testcase name="admin True-&gt; uname and False-&gt; password" classname="Login" time="0.006"/>
-  <testcase name="admin False-&gt; uname" classname="Login" time="0.006"/>
-  <testcase name="tenant True-&gt; uname and True-&gt; password" classname="Login" time="0.008"/>
-  <testcase name="tenant True-&gt; uname and False-&gt; password" classname="Login" time="0.005"/>
-  <testcase name="tenant False-&gt; uname" classname="Login" time="0.006"/>
-  <testcase name="Decid what the role from the username" classname="Login" time="0.006"/>
+  <testcase name="owner False-&gt; uname" classname="Login" time="0.005"/>
+  <testcase name="admin True-&gt; uname and True-&gt; password" classname="Login" time="0.007"/>
+  <testcase name="admin True-&gt; uname and False-&gt; password" classname="Login" time="0.007"/>
+  <testcase name="admin False-&gt; uname" classname="Login" time="0.007"/>
+  <testcase name="tenant True-&gt; uname and True-&gt; password" classname="Login" time="0.006"/>
+  <testcase name="tenant True-&gt; uname and False-&gt; password" classname="Login" time="0.006"/>
+  <testcase name="tenant False-&gt; uname" classname="Login" time="0.005"/>
+  <testcase name="Decid what the role from the username" classname="Login" time="0.005"/>
   <testcase name="" classname="show all not to test" time="0.007"/>
-  <testcase name="when admins request to Show Status Of Housing" classname="View the available housing" time="0.01">
-    <system-err><![CDATA[Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+  <testcase name="when admins request to Show Status Of Housing" classname="View the available housing" time="0.056">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: House Id:   2,200
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO:  ||||||||   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: Available
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: 
 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: House Id:   7,200
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO:  ||||||||   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: Available
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: 
 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: House Id:   222,002
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO:  ||||||||   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: Available
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: 
 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: House Id:   2,200
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO:  ||||||||   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: Available
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showStatusOfHousing
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showStatusOfHousing
 INFO: 
 
 ]]></system-err>
   </testcase>
-  <testcase name="when  the tenant want to add some furniture" classname="add furniture." time="0.006"/>
-  <testcase name="when admins request to see the available housing ." classname="View the infotnation about available housing" time="0.02">
-    <system-err><![CDATA[Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+  <testcase name="when  the tenant want to add some furniture" classname="add furniture." time="0"/>
+  <testcase name="when admins request to see the available housing ." classname="View the infotnation about available housing" time="0.002">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Id:  2,200 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Id:   2
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: alsafa
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House location:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: nablus
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Apartment Number: 200 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: elevator
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ownerOmar11
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 0569696345
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Id:  7,200 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Id:   7
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: alsafa
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House location:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: nablus
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Apartment Number: 200 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: elevator
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ownerOmar
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 0569696345
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Id:  222,002 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Id:   22
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: alsafa
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House location:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: nablus
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Apartment Number: 2,002 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: elevator
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ownerOmar11
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 0569696345
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Id:  2,200 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Id:   2
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Residence Name:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: alsafa
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House location:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: nablus
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 floor Number :  3 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Apartment Number: 200 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House photo:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: https://drive.google.com/file/d/1Meeeogiy_F5bCQvhoJB2BepnrxkRkF_P/view?usp=drive_link
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Rent:   1,200
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 House Services:   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: elevator
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Max Number Of Tenant in House :   2
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bedrooms in House:   3
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Bethrooms in House:   3
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Number Of Balcony House:   1
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Name to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ownerOmar
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Phone to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 0569696345
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: 
 Owner Email to House :   
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showFromHousingListAccepted
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showFromHousingListAccepted
 INFO: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ]]></system-err>
   </testcase>
-  <testcase name="If the tenant requests to reserve an apartment and there is room in this apartment" classname="If the tenant requests to reserve an apartment and there is room in this apartment" time="0.007">
-    <system-err><![CDATA[Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+  <testcase name="If the tenant requests to reserve an apartment and there is room in this apartment" classname="If the tenant requests to reserve an apartment and there is room in this apartment" time="0.002">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: The apartment has been booked
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: The apartment has been booked
 ]]></system-err>
   </testcase>
-  <testcase name="If the tenant requests to book an apartment and there is no space in this apartment" classname="If the tenant requests to reserve an apartment and there is room in this apartment" time="0.008">
-    <system-err><![CDATA[Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+  <testcase name="If the tenant requests to book an apartment and there is no space in this apartment" classname="If the tenant requests to reserve an apartment and there is room in this apartment" time="0.001">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: The apartment has been booked
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: This house is Unavailable
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: The apartment has been booked
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: This house is Unavailable
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: The apartment has been booked
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: This house is Unavailable
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: The apartment has been booked
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN bookAccommodation
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN bookAccommodation
 INFO: This house is Unavailable
 ]]></system-err>
   </testcase>
-  <testcase name="when tenant request own Control Panel." classname="Control Panel for tenant" time="0.017">
-    <system-err><![CDATA[Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+  <testcase name="when tenant request own Control Panel." classname="Control Panel for tenant" time="0.001">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: your name : 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: tenantNajeh451
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: your phone : 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: 05999999
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: your age :  19 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: your majer : 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: Comuter Engineering
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: your furniture : 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN tenantCpanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN tenantCpanel
 INFO: The apartment number booked in your name is : 43  
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: The owner Name is   : 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: ownerOmar11
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: The owner Phone is  : 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: 0569696345
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: The owner Email is  : 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: omar.112@gmail.com
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: The Residence Id is  : 4
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: The Rent is  :1,200 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: Please pay the rent within the next month.
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN forToTenConPanel
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN forToTenConPanel
 INFO: ||||||||||||||||||||||||||||||||||||||||||||
 ]]></system-err>
   </testcase>
-  <testcase name="when  the tenant want to show his furniture" classname="show furniture." time="0.008">
-    <system-err><![CDATA[Aug 08, 2023 9:57:21 AM sakancommain.MAIN showUsedFurniture
+  <testcase name="when  the tenant want to show his furniture" classname="show furniture." time="0.006">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN showUsedFurniture
 INFO: I have this used furniture for sale at good prices :
 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showUsedFurniture
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showUsedFurniture
 INFO: bed 100
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showUsedFurniture
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showUsedFurniture
 INFO: I have this used furniture for sale at good prices :
 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showUsedFurniture
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showUsedFurniture
 INFO: bed 100
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showUsedFurniture
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showUsedFurniture
 INFO: I have this used furniture for sale at good prices :
 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showUsedFurniture
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showUsedFurniture
 INFO: bed 100
 ]]></system-err>
   </testcase>
-  <testcase name="" classname="show furniture." time="0.051">
-    <system-err><![CDATA[Aug 08, 2023 9:57:21 AM sakancommain.MAIN showUsedFurniture
+  <testcase name="" classname="show furniture." time="0.008">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN showUsedFurniture
 INFO: I dont have any used furniture for sale 
 
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN showUsedFurniture
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN showUsedFurniture
 INFO: I dont have any used furniture for sale 
 
 ]]></system-err>
   </testcase>
-  <testcase name="when Tenant request informayion about the people who live in it." classname="add housing #2" time="0.002">
-    <system-err><![CDATA[Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+  <testcase name="when Tenant request informayion about the people who live in it." classname="add housing #2" time="0.02">
+    <system-err><![CDATA[Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh43
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05777777
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:21
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO:  MIS
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh42
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05666666
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:20
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Civil Engineering
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh451
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05999999
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:19
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Comuter Engineering
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh43
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05777777
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:21
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO:  MIS
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh42
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05666666
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:20
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Civil Engineering
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh43
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05777777
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:21
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO:  MIS
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh42
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05666666
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:20
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Civil Engineering
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh451
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05999999
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:19
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Comuter Engineering
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh43
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05777777
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:21
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO:  MIS
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh42
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05666666
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:20
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Civil Engineering
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh43
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05777777
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:21
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO:  MIS
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh42
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05666666
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:20
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Civil Engineering
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh451
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05999999
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:19
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Comuter Engineering
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh43
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05777777
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:21
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO:  MIS
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: *********Student Neighbors Information:*********
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student Name:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: tenantNajeh42
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student phone:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: 05666666
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student age:20
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Student majer:
-Aug 08, 2023 9:57:21 AM sakancommain.MAIN ifTenIsStudent
+Aug 08, 2023 10:48:18 AM sakancommain.MAIN ifTenIsStudent
 INFO: Civil Engineering
 ]]></system-err>
   </testcase>
