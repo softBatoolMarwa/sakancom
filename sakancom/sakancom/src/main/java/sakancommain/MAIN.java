@@ -424,7 +424,6 @@ return h;	}
     public static Boolean addHousing(HOUSE h,String getUserType) {                        /*** to add housing by the owner  ***/
 		if (getUserType.equals(ADMIN)) {
 			
-			
 			int flag=0;
 			for (int i=0 ; i<housingListAccepted.size(); i++) {
 				if( h.getHousingId() == housingListAccepted.get(i).getHousingId()) {
@@ -1042,7 +1041,8 @@ return true;
 
 		
 		users.add(fifthUser);
-		  if (isUserFound(userName, passWord)) {
+		boolean  x= isUserFound(userName, passWord);
+		  if (x) {
 		 
 			
 				if (userName.startsWith(ADMIN)) {
