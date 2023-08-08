@@ -87,7 +87,25 @@ public static  Boolean isUserFound (String userName , String passWord) {
 		}
 		
 		return returnn;}
-	
+	public static void forToTenConPanel(int idHouse) {
+		for (int jj=0 ; jj<housingListAccepted.size() ; jj++) {
+			if(idHouse==housingListAccepted.get(jj).getHousingId()) {
+				LOGGER.log(Level.INFO,"The owner Name is   : ");
+				LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerName() );
+				LOGGER.log(Level.INFO,"The owner Phone is  : ");
+				LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerPhone() );
+				LOGGER.log(Level.INFO,"The owner Email is  : ");
+				LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerEmail() );
+				LOGGER.log(Level.INFO,"The Residence Id is  : {0}",housingListAccepted.get(jj).getResidenceId());
+				LOGGER.log(Level.INFO,"The Rent is  :{0} ",housingListAccepted.get(jj).getRent());
+				LOGGER.log(Level.INFO,"Please pay the rent within the next month.");
+				LOGGER.log(Level.INFO,"||||||||||||||||||||||||||||||||||||||||||||");
+
+			}
+				
+
+	}
+	}
 public static boolean addUsedFurniture(String furniture,String user) {
 	boolean flag=false;
 		for (int i=0 ; i<getTenantlinst().size() ; i++) {
@@ -128,24 +146,8 @@ public static boolean addUsedFurniture(String furniture,String user) {
 					LOGGER.log(Level.INFO,"The apartment number booked in your name is : {0}  ",getHouseandtennantlist().get(j).gethousingId() );
 					idHouse=getHouseandtennantlist().get(j).gethousingId();
 				
-					
-					for (int jj=0 ; jj<housingListAccepted.size() ; jj++) {
-						if(idHouse==housingListAccepted.get(jj).getHousingId()) {
-							LOGGER.log(Level.INFO,"The owner Name is   : ");
-							LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerName() );
-							LOGGER.log(Level.INFO,"The owner Phone is  : ");
-							LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerPhone() );
-							LOGGER.log(Level.INFO,"The owner Email is  : ");
-							LOGGER.log(Level.INFO,housingListAccepted.get(jj).getOwnerEmail() );
-							LOGGER.log(Level.INFO,"The Residence Id is  : {0}",housingListAccepted.get(jj).getResidenceId());
-							LOGGER.log(Level.INFO,"The Rent is  :{0} ",housingListAccepted.get(jj).getRent());
-							LOGGER.log(Level.INFO,"Please pay the rent within the next month.");
-							LOGGER.log(Level.INFO,"||||||||||||||||||||||||||||||||||||||||||||");
-
-						}
-							
-
-				}
+					forToTenConPanel(idHouse);
+			
 					}
 				
 			}	
