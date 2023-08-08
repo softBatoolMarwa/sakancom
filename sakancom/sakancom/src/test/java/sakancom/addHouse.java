@@ -31,7 +31,7 @@ public void the_house_added_to_housing_array_to_go_into_admin() {
 	hh.setNumOfBathrooms(3);
 	hh.setBalcony(1);
 	hh.setOwnerUserName("omar");
-	hh.setOwnerName("ownerOmar");
+	hh.setOwnerName("ownerOmar11");
 	hh.setOwnerPhone("0569696345");
 	hh.setOwnerEmail("omar.112@gmail.com");
 	
@@ -40,7 +40,7 @@ public void the_house_added_to_housing_array_to_go_into_admin() {
 	
 	
 	boolean c= MAIN.addHousing(h,"owner");
-	MAIN.showHousingj("ownerOmar");	
+	MAIN.showHousingj("ownerOmar11");	
 	equals( true==c );
 
 

@@ -342,6 +342,9 @@ return h;	}
 		
 		
 	}
+	static Scanner input6 = new Scanner(System.in);
+
+	static Scanner input5 = new Scanner(System.in);
     public static HOUSE addHousingInfo() {
 	input4 = new Scanner(System.in);
 	LOGGER.log(Level.INFO,"Enter the residence ID :");
@@ -349,25 +352,26 @@ return h;	}
 	LOGGER.log(Level.INFO,"Enter the residence name :");
 	String residenceName = input4.next();
 	LOGGER.log(Level.INFO,"Enter the residence location :");
-	String location = input4.next();
+	String location = input5.next();
+	
 	LOGGER.log(Level.INFO,"Enter the floor number :");
 	int floorNumber = input4.nextInt(); 
 	LOGGER.log(Level.INFO,"Enter the apartment number :");
 	int apartmentNumber = input4.nextInt(); 
 	LOGGER.log(Level.INFO,"Enter the apartment photo :");
-	String photo = input4.next();
+	String photo = input5.next();
 	LOGGER.log(Level.INFO,"Enter the monthly rent ( inclusive of electricity and water ) :");
 	int rent = input4.nextInt(); 
 	LOGGER.log(Level.INFO,"Enter the available services in the apartment :");
-	String services = input4.next();
+	String services = input5.next();
 	LOGGER.log(Level.INFO,"Enter the Maximum number of tenants :");
 	int maxNum = input4.nextInt();
 	LOGGER.log(Level.INFO,"Enter the Number of bedrooms:");
-	int numOfBedrooms = input4.nextInt();
+	int numOfBedrooms = input6.nextInt();
 	LOGGER.log(Level.INFO,"Enter the Number of bathrooms:");
-	int numOfBathrooms = input4.nextInt();
+	int numOfBathrooms = input6.nextInt();
 	LOGGER.log(Level.INFO,"is there a balcony in the apartment? if ");
-	int balcony = input4.nextInt();
+	int balcony = input6.nextInt();
 	LOGGER.log(Level.INFO,"The name of the owner has been entered. If you want to change it, go to the Modify field. The name of the owner is: \n");
 	LOGGER.log(Level.INFO,username);
 
@@ -972,11 +976,11 @@ flag=true;
  				LOGGER.log(Level.INFO,getTenantlinst().get(i).getname());
 
  				LOGGER.log(Level.INFO,"Student phone:");
- 				LOGGER.log(Level.INFO,getTenantlinst().get(i).getname());
+ 				LOGGER.log(Level.INFO,getTenantlinst().get(i).getphone());
 
  				LOGGER.log(Level.INFO,"Student age:{0}",getTenantlinst().get(i).getage());
  				LOGGER.log(Level.INFO,"Student majer:");
- 				LOGGER.log(Level.INFO,getTenantlinst().get(i).getname());
+ 				LOGGER.log(Level.INFO,getTenantlinst().get(i).getmajer());
 
 
  				
